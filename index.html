@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Home Page</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1749808653681"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1749808653681">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header" data-fls-header-scroll="">
+				<div class="header__container">
+					<a href="" class="header__logo">
+						<img src="./assets/img/logo.svg" alt="logo">
+					</a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link">Бренди</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Співпраця</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Про компанію</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Новини</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+						<button class="menu__btn" type="button">Де купити?</button>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.js?v=1749808653681on">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+					<div class="header__search search">
+						<button class="search__btn-mobile search__btn-mobile--icon-search" type="button"></button>
+						<form class="search__form" id="search-form" action="#">
+							<input class="search__input js-search-input" type="text" name="term" autocomplete="off" placeholder="Пошук...">
+							<button class="search__btn search__btn--icon-search" type="submit"></button>
+						</form>
+					</div>
+					<div class="header__lang lang">
+						<button class="lang__btn lang__btn--icon-arrow-down" type="button">UA</button>
+						<nav class="lang__nav">
+							<a class="lang__link" href="#">EN</a>
+							<a class="lang__link" href="#">RU</a>
+						</nav>
+					</div>
+					<button type="button" class="header__btn btn-border">Де купити?</button>
+					<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+						<span></span>
+					</button>
+				</div>
+			</header>
+			<main class="page page--home">
+				<section class="hero">
+					<div data-fls-slider="" class="hero__thumb swiper" js-hero-thumb="">
+						<div class="hero__wrapper swiper-wrapper">
+							<div class="hero__slide swiper-slide">
+								<picture>
+									<source srcset="./assets/img/hero-mob.png" media="(max-width: 574px)">
+									<img src="./assets/img/hero.png" alt="hero">
+								</picture>
+							</div>
+							<div class="hero__slide swiper-slide">
+								<picture>
+									<source srcset="./assets/img/hero02.png" media="(max-width: 574px)">
+									<img src="./assets/img/hero02.png" alt="hero">
+								</picture>
+							</div>
+						</div>
+						<div class="swiper-nav">
+							<div class="swiper-nav__wrap">
+								<button type="button" class="swiper-button-prev"></button>
+								<div class="swiper-pagination"></div>
+								<button type="button" class="swiper-button-next"></button>
+							</div>
+						</div>
+					</div>
+					<div data-fls-slider="" class="hero__slider swiper" js-hero-slider="">
+						<div class="hero__wrapper swiper-wrapper">
+							<div class="hero__slide swiper-slide">
+								<div class="hero__container">
+									<div class="hero__content">
+										<h1 class="hero__title">Насолоджуйтеся
+								теплими моментами</h1>
+										<div class="hero__text">
+											<p>
+												Cupsoul - це місце, де класичні традиції чаювання зустрічаються із сучасним
+									підходом
+									до смаку та
+									стилю. Для нас чай - це
+									особливий ритуал, що наповнює кожен день гармонією та натхненням.
+											</p>
+											<p>
+												У нашому асортименті знайдеться ідеальне рішення як для шанувальників витончених
+									класичних
+									купажів,
+									так і для тих, хто
+									бажає відкриттів.
+											</p>
+										</div>
+										<button class="btn-more">
+											<span class="icon-arrow icon-arrow--lg"></span>
+											Дивитись більше
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="hero__slide swiper-slide">
+								<div class="hero__container">
+									<div class="hero__content">
+										<h1 class="hero__title" data-swiper-parallax="-50%">Насолоджуйтеся
+								теплими моментами</h1>
+										<div class="hero__text" data-swiper-parallax="-70%">
+											<p>
+												Cupsoul - це місце, де класичні традиції чаювання зустрічаються із сучасним підходом
+									до смаку та
+									стилю. Для нас чай - це
+									особливий ритуал, що наповнює кожен день гармонією та натхненням.
+											</p>
+										</div>
+										<button class="btn-more" data-swiper-parallax="-80%">
+											<span class="icon-arrow icon-arrow--lg"></span>
+											Дивитись більше
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section our-product">
+					<div class="our-product__container">
+						<h2 class="our-product__title section-title" data-value="Наша продукція">Наша продукція</h2>
+						<!-- Оболонка слайдера -->
+						<div data-fls-slider="" class="our-product__slider swiper" js-product-slider="">
+							<!-- Частина слайдера, що рухається -->
+							<div class="our-product__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="our-product__slide swiper-slide">
+									<div class="our-product__cart cart-product">
+										<div class="cart-product__top">
+											<div class="cart-product__logo">
+												<img src="./assets/img/graff-logo.svg" alt="Image">
+											</div>
+											<a href="#" class="cart-product__img">
+												<img src="./assets/img/product01.png" alt="product">
+											</a>
+										</div>
+										<div class="cart-product__content">
+											<a href="#" class="cart-product__title">Англійський сніданок</a>
+											<div class="cart-product__text">
+												<p>
+													Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras
+										turpis risus condimentum sit eget
+										egestas mi. Tristique a enim mauris cras etiam ornare massa.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="our-product__slide swiper-slide">
+									<div class="our-product__cart cart-product">
+										<div class="cart-product__top">
+											<div class="cart-product__logo">
+												<img src="./assets/img/graff-logo.svg" alt="Image">
+											</div>
+											<a href="#" class="cart-product__img">
+												<img src="./assets/img/product02.png" alt="product">
+											</a>
+										</div>
+										<div class="cart-product__content">
+											<a href="#" class="cart-product__title">Лавандова прогулянка</a>
+											<div class="cart-product__text">
+												<p>
+													Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras
+										turpis risus condimentum sit eget
+										egestas mi. Tristique a enim mauris cras etiam ornare massa.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="our-product__slide swiper-slide">
+									<div class="our-product__cart cart-product">
+										<div class="cart-product__top">
+											<div class="cart-product__logo">
+												<img src="./assets/img/graff-logo.svg" alt="Image">
+											</div>
+											<a href="#" class="cart-product__img">
+												<img src="./assets/img/product03.png" alt="product">
+											</a>
+										</div>
+										<div class="cart-product__content">
+											<a href="#" class="cart-product__title">Вишневий самурай</a>
+											<div class="cart-product__text">
+												<p>
+													Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras
+										turpis risus condimentum sit eget
+										egestas mi. Tristique a enim mauris cras etiam ornare massa.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="our-product__slide swiper-slide">
+									<div class="our-product__cart cart-product">
+										<div class="cart-product__top">
+											<div class="cart-product__logo">
+												<img src="./assets/img/graff-logo.svg" alt="Image">
+											</div>
+											<a href="#" class="cart-product__img">
+												<img src="./assets/img/product01.png" alt="product">
+											</a>
+										</div>
+										<div class="cart-product__content">
+											<a href="#" class="cart-product__title">Англійський сніданок</a>
+											<div class="cart-product__text">
+												<p>
+													Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras
+										turpis risus condimentum sit eget
+										egestas mi. Tristique a enim mauris cras etiam ornare massa.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Якщо потрібен скролбар -->
+							<div class="swiper-scrollbar"></div>
+						</div>
+					</div>
+				</section>
+				<div class="video">
+					<video id="video-company" playsinline="" muted poster="./assets/img/video.png" width="1440" height="740">
+						<source src="./assets/video/sunsay.mp4" type="video/mp4">
+					</video>
+					<div class="video__container">
+						<button type="button" class="play video-control"></button>
+					</div>
+				</div>
+				<section class="section about-cup">
+					<div class="about-cup__container">
+						<h2 class="about-cup__title">
+							Про
+							<img src="./assets/img/text-logo.svg" alt="cup soul logo">
+						</h2>
+						<blockquote class="about-cup__blockquote">
+							<span class="about-cup__line --icon-quote"></span>
+							<div class="about-cup__text">
+								<p>
+									Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras turpis risus
+						condimentum sit eget
+						egestas mi. Tristique a enim mauris cras etiam ornare massa.
+								</p>
+							</div>
+							<span class="about-cup__line --icon-quote"></span>
+						</blockquote>
+						<div class="about-cup__wrap">
+							<div class="about-cup__list">
+								<div class="about-cup__item item-about-cup">
+									<h3 class="item-about-cup__title">Екологічність</h3>
+									<div class="item-about-cup__text">
+										<p>
+											Заради природи, заради майбутнього. Екологічність - це не просто тренд, це наша
+								відповідальність. Ми використовуємо
+								інноваційні технології, щоб наші чайні пакетики були безпечними для навколишнього
+								середовища, замінюючи традиційні
+								металеві скоби і клей на перевірені часом матеріали.
+										</p>
+									</div>
+								</div>
+								<div class="about-cup__item item-about-cup">
+									<h3 class="item-about-cup__title">Найновіше обладнання</h3>
+									<div class="item-about-cup__text">
+										<p>
+											Наші виробничі лінії оснащені найсучаснішим обладнанням ІМА, яке забезпечує бездоганну
+								якість продукту. Це дає нам
+								можливість гарантувати, що кожен пакетик чаю максимально зберігає свіжість та аромат.
+										</p>
+									</div>
+								</div>
+								<div class="about-cup__item item-about-cup">
+									<h3 class="item-about-cup__title">Інновації та Натуральність</h3>
+									<div class="item-about-cup__text">
+										<p>
+											У нашому новаторстві ми завжди тримаємо курс на непорушність натуральності. Відбір
+								найкращого чаю та передові методи
+								його переробки дозволяють нам наповнити кожен пакетик аутентичними смаком та ароматом,
+								які ви відчуєте з самого першого
+								ковтка.
+										</p>
+									</div>
+								</div>
+								<div class="about-cup__item item-about-cup">
+									<h3 class="item-about-cup__title">Кращі постачальники</h3>
+									<div class="item-about-cup__text">
+										<p>
+											Компроміси неприпустимі, коли йдеться про якість. Ми обираємо лише кращих постачальників
+								чайної сировини, з якими нас
+								зв'язують спільні цінності та високі стандарти якості.
+										</p>
+									</div>
+								</div>
+							</div>
+							<a class="btn-white" href="">
+								Дивитись більше
+								<span class="icon-arrow icon-arrow--cream"></span>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="section instagram">
+					<div class="instagram__container">
+						<h2 class="instagram__title">
+							<img src="./assets/img/graff-logo.svg" alt="graff-logo">
+							в Instagram
+						</h2>
+						<div class="instagram__wrap">
+							<div class="instagram__row">
+								<div class="instagram__col">
+									<div class="instagram__img">
+										<img src="./assets/img/insta.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta01.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta02.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta03.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta04.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta05.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta06.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta07.png" alt="insta">
+									</div>
+								</div>
+								<div class="instagram__col">
+									<div class="instagram__img">
+										<img src="./assets/img/insta.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta01.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta02.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta03.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta04.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta05.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta06.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta07.png" alt="insta">
+									</div>
+								</div>
+							</div>
+							<div class="instagram__row reverse">
+								<div class="instagram__col">
+									<div class="instagram__img">
+										<img src="./assets/img/insta.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta01.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta02.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta03.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta04.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta05.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta06.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta07.png" alt="insta">
+									</div>
+								</div>
+								<div class="instagram__col">
+									<div class="instagram__img">
+										<img src="./assets/img/insta.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta01.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta02.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta03.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta04.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta05.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta06.png" alt="insta">
+									</div>
+									<div class="instagram__img">
+										<img src="./assets/img/insta07.png" alt="insta">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="instagram__links">
+							<a class="instagram__link --icon-instagram" href="#">
+								<span>Graff</span>
+								<span class="icon-arrow icon-arrow--lg"></span>
+							</a>
+							<a class="instagram__link --icon-instagram" href="#">
+								<span>Ritz Barton</span>
+								<span class="icon-arrow icon-arrow--lg"></span>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="section news">
+					<div class="news__container">
+						<h2 class="section-title" data-value="Новини та публікації">Новини та публікації</h2>
+						<div class="news__list">
+							<div class="news__item news-item">
+								<a href="#" class="news-item__img">
+									<img src="./assets/img/news01.png" alt="news">
+								</a>
+								<div class="news-item__content">
+									<div class="news-item__top">
+										<div class="news-item__heading">чайні традиції у різних країнах</div>
+										<div class="news-item__data">25.03.2024</div>
+									</div>
+									<h3 class="news-item__title">
+										<a class="news-item__link" href="#">
+											Розігруємо 2 квитки на цю
+								магічну подію, де ти зможеш завітати до
+								нашого казкового чайного будиночка
+										</a>
+									</h3>
+									<div class="news-item__text">
+										<p>
+											Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras turpis
+								risus condimentum sit eget
+								egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim mauris
+								cras etiam ornare massa.
+										</p>
+									</div>
+								</div>
+								<a href="#" class="btn-more">
+									<span class="icon-arrow icon-arrow--white"></span>
+									Читати
+						публікацію
+								</a>
+							</div>
+							<div class="news__item news-item">
+								<a href="#" class="news-item__img">
+									<img src="./assets/img/news02.png" alt="news">
+								</a>
+								<div class="news-item__content">
+									<div class="news-item__top">
+										<div class="news-item__heading">як правильно заварювати чай</div>
+										<div class="news-item__data">25.03.2024</div>
+									</div>
+									<h3 class="news-item__title">
+										<a class="news-item__link" href="#">
+											Розігруємо 2 квитки на цю
+								магічну подію, де ти зможеш завітати до
+								нашого казкового чайного будиночка
+										</a>
+									</h3>
+									<div class="news-item__text">
+										<p>
+											Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras turpis
+								risus condimentum sit eget
+								egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim mauris
+								cras etiam ornare massa.
+										</p>
+									</div>
+								</div>
+								<a href="#" class="btn-more">
+									<span class="icon-arrow icon-arrow--white"></span>
+									Читати
+						публікацію
+								</a>
+							</div>
+							<div class="news__item news-item">
+								<a href="#" class="news-item__img">
+									<img src="./assets/img/news03.png" alt="news">
+								</a>
+								<div class="news-item__content">
+									<div class="news-item__top">
+										<div class="news-item__heading">Види чаю та їх особливості</div>
+										<div class="news-item__data">25.03.2024</div>
+									</div>
+									<h3 class="news-item__title">
+										<a class="news-item__link" href="#">
+											Розігруємо 2 квитки на цю
+								магічну подію, де ти зможеш завітати до
+								нашого казкового чайного будиночка
+										</a>
+									</h3>
+									<div class="news-item__text">
+										<p>
+											Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras turpis
+								risus condimentum sit eget
+								egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim mauris
+								cras etiam ornare massa.
+										</p>
+									</div>
+								</div>
+								<a href="#" class="btn-more">
+									<span class="icon-arrow icon-arrow--white"></span>
+									Читати
+						публікацію
+								</a>
+							</div>
+						</div>
+						<div class="news__btn">
+							<a class="btn-white" href="">
+								Дивитись більше
+								<span class="icon-arrow icon-arrow--cream"></span>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="section more-about">
+					<div class="more-about__container">
+						<div class="more-about__row">
+							<div class="more-about__col">
+								<div class="text-formatted">
+									<h2>Насолоджуйся теплими моментами</h2>
+									<p>
+										Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras turpis risus
+							condimentum sit eget
+							egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim mauris cras
+							etiam ornare massa.
+									</p>
+									<p>
+										Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras turpis risus
+							condimentum sit eget
+							egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim mauris cras
+							etiam ornare massa.
+									</p>
+									<p>
+										Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras turpis risus
+							condimentum sit eget
+							egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim mauris cras
+							etiam ornare massa.
+									</p>
+									<h3>Зустрічайте новий рік з CupSoul</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras turpis risus
+							condimentum sit eget
+							egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim mauris cras
+							etiam ornare massa. Tristique
+							a enim mauris cras etiam ornare massa. Tristique a enim mauris cras etiam ornare massa.
+									</p>
+									<p>
+										Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras turpis risus
+							condimentum sit eget
+							egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim mauris cras
+							etiam ornare massa. Tristique
+							a enim mauris cras etiam ornare massa. Tristique a enim mauris cras etiam ornare massa.
+									</p>
+								</div>
+							</div>
+							<div class="more-about__col">
+								<form class="form" action="#">
+									<h3 class="form__title">
+										Дізнайтесь більше про
+										<img src="./assets/img/text-logo-white.svg" alt="logo vup soul">
+									</h3>
+									<div class="form__text">
+										Напишіть нам і ми проконсультуємо вас з будь-яких питань щодо продукції
+							CupSoul
+									</div>
+									<div class="form__row">
+										<div class="form-group">
+											<label for="name">Ім’я</label>
+											<input autocomplete="off" id="name" type="text" name="" data-error="Помилка" placeholder="Ваше ім’я" class="input" required>
+										</div>
+										<div class="form-group">
+											<label for="email">Email</label>
+											<input autocomplete="off" id="email" type="email" name="" data-error="Помилка" placeholder="mail@gmail.com" class="input" required>
+										</div>
+										<div class="form-group">
+											<label for="message">Запитання</label>
+											<textarea autocomplete="off" id="message" name="" placeholder="Напишіть будь ласка ваше запитання тут..." data-error="Помилка" class="input"></textarea>
+										</div>
+									</div>
+									<div class="form__bottom">
+										<button class="btn-white" type="submit">
+											Надіслати запитання
+											<span class="icon-arrow icon-arrow--cream"></span>
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__top">
+						<a href="" class="footer__logo">
+							<img src="./assets/img/logo-footer.svg" alt="logo">
+						</a>
+						<nav class="footer__menu">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">Бренди</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Співпраця</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Про компанію</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Новини</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="footer__lang lang">
+							<button class="lang__btn lang__btn--icon-arrow-down" type="button">UA</button>
+							<nav class="lang__nav">
+								<a class="lang__link" href="#">EN</a>
+								<a class="lang__link" href="#">RU</a>
+							</nav>
+						</div>
+						<button type="button" class="footer__btn btn-border">Де купити?</button>
+					</div>
+					<div class="footer__info">TEA & FOOD</div>
+					<div class="footer__bottom">
+						<div class="footer__copyright">2025. © CapSoul. Копіювання матеріалів заборонено.</div>
+						<a class="footer__fenix" href="#">
+							Розробка сайту
+							<img src="./assets/img/fenix-logo.svg" alt="fenix-logo">
+						</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
