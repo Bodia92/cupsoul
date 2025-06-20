@@ -5,15 +5,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1749808653681"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1749808653681">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1750424985002"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1750424985002">
 	</head>
 	<body>
 		<div class="wrapper">
 			<header data-fls-header="" class="header" data-fls-header-scroll="">
 				<div class="header__container">
-					<a href="" class="header__logo">
+					<a href="" class="header__logo logo-white">
 						<img src="./assets/img/logo.svg" alt="logo">
+					</a>
+					<a href="" class="header__logo logo-black">
+						<img src="./assets/img/logo-footer.svg" alt="logo">
 					</a>
 					<div class="header__menu menu">
 						<nav class="menu__body">
@@ -38,7 +41,7 @@
 						<button class="menu__btn" type="button">Де купити?</button>
 					</div>
 					<!--
-<fetch url="@components/layout/menu/menu.js?v=1749808653681on">
+<fetch url="@components/layout/menu/menu.js?v=1750424985002on">
 <each loop='item in response'>
 </each>
 </fetch>
@@ -48,6 +51,42 @@
 						<form class="search__form" id="search-form" action="#">
 							<input class="search__input js-search-input" type="text" name="term" autocomplete="off" placeholder="Пошук...">
 							<button class="search__btn search__btn--icon-search" type="submit"></button>
+							<div class="form-modal">
+								<div class="form-modal__wrap">
+									<div class="form-modal__title">Почніть вводити пошуковий запит, наприклад “Листовий чай”</div>
+									<div class="form-modal__text">Мінімальна довжина пошукового запиту 3 символи</div>
+									<div class="form-modal__list">
+										<div class="form-modal__product product-form">
+											<div class="product-form__img">
+												<img src="./assets/img/product01.png" alt="product">
+											</div>
+											<div class="product-form__content">
+												<h3 class="product-form__title">Англійський сніданок</h3>
+												<div class="product-form__text">
+													Lorem ipsum dolor sit amet consectetur. Id arcu
+										purus
+										phasellus id mattis. Cras turpis risus condimentum sit eget
+										egestas mi. Tristique a enim mauris cras etiam ornare massa.
+												</div>
+											</div>
+										</div>
+										<div class="form-modal__product product-form">
+											<a href="#" class="product-form__img">
+												<img src="./assets/img/product01.png" alt="product">
+											</a>
+											<div class="product-form__content">
+												<a href="#" class="product-form__title">Англійський сніданок</a>
+												<div class="product-form__text">
+													Lorem ipsum dolor sit amet consectetur. Id arcu
+										purus
+										phasellus id mattis. Cras turpis risus condimentum sit eget
+										egestas mi. Tristique a enim mauris cras etiam ornare massa.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</form>
 					</div>
 					<div class="header__lang lang">
@@ -141,6 +180,128 @@
 						</div>
 					</div>
 				</section>
+				<section class="section subcategories">
+					<div class="subcategories__container">
+						<div class="subcategories__wrap">
+							<div class="subcategories__aside">
+								<div data-fls-spollers="" class="spollers">
+									<details class="spollers__item" data-fls-spollers-open="">
+										<summary class="spollers__title">
+											Graff
+											<span class="icon-arrow"></span>
+										</summary>
+										<div class="spollers__body">
+											<div class="spollers__list">
+												<a class="spollers__link js-subcategory-trigger active" data-content="1" href="#">Колекція чаю в
+										пакетиках
+										в індивідуальних пакетах (саше)</a>
+												<a class="spollers__link js-subcategory-trigger" data-content="2" href="#">Колекція
+										листового чаю</a>
+												<a class="spollers__link js-subcategory-trigger" data-content="3" href="#">Колекція
+										чаю в
+										пірамідках</a>
+												<a class="spollers__link js-subcategory-trigger" data-content="4" href="#">Колекція
+										чаю в
+										пакетиках</a>
+												<a class="spollers__link js-subcategory-trigger" data-content="5" href="#">Колекція
+										чаю у кадді
+										пакетиках</a>
+												<a class="spollers__link js-subcategory-trigger" data-content="6" href="#">Колекція
+										чаю для
+										HoReCa</a>
+											</div>
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">
+											Ritz Barton
+											<span class="icon-arrow"></span>
+										</summary>
+										<div class="spollers__body">
+											<div class="spollers__list">
+												<a class="spollers__link active" href="#">Колекція чаю в пакетиках
+										в індивідуальних пакетах (саше)</a>
+												<a class="spollers__link js-subcategory-trigger" data-content="7" href="#">Колекція
+										листового чаю</a>
+												<a class="spollers__link js-subcategory-trigger" data-content="8" href="#">Колекція
+										чаю в
+										пірамідках</a>
+												<a class="spollers__link js-subcategory-trigger" data-content="9" href="#">Колекція
+										чаю в
+										пакетиках</a>
+												<a class="spollers__link js-subcategory-trigger" data-content="10" href="#">Колекція
+										чаю у кадді
+										пакетиках</a>
+												<a class="spollers__link js-subcategory-trigger" data-content="11" href="#">Колекція
+										чаю для
+										HoReCa</a>
+											</div>
+										</div>
+									</details>
+								</div>
+							</div>
+							<div class="subcategories__content">
+								<div class="subcategories__tab active" data-content="1">
+									<div class="subcategories__tab-inner">
+										<div class="subcategories__img">
+											<img src="./assets/img/sub-product.png" alt="Image">
+										</div>
+										<div class="subcategories__text text-formatted">
+											<p>
+												<strong>GRAFF</strong>
+												- це історія про пристрасть до чаю, стиль і прагнення до
+									досконалості. Бренд народився з ідеї поєднати традиції
+									чайного мистецтва з сучасними інноваціями, створюючи напій, який не просто втамовує
+									спрагу, а дарує натхнення та
+									підкреслює індивідуальність кожного.
+											</p>
+											<p>
+												З моменту заснування ми ставили перед собою амбітну мету - зробити чай не лише
+									частиною
+									щоденного життя, а й важливим
+									елементом стилю. Завдяки ретельному відбору кращих сортів сировини, використанню
+									передових технологій виробництва, та
+									створенню унікальних смакових композицій, GRAFF став символом якості, статусу та
+									смаку.
+											</p>
+											<p>
+												Кожен ковток GRAFF - це подорож, яка поєднує багатовікові традиції чайної культури та
+									сучасний ритм життя. Наші герої на
+									упаковках чаю розповідають власні історії, відображаючи характери і емоції, які
+									дарує
+									кожен купаж чаю.
+											</p>
+											<p>
+												Сьогодні GRAFF - це більше ніж чай. Це стиль життя, для тих хто цінує естетику,
+									новаторство та момент для себе. Ми
+									продовжуємо вдосконалюватися, залишаючись вірними своїм принципам: натуральність,
+									якість
+									та відповідальність перед
+									природою.
+											</p>
+											<h3>Graff - твій стиль, твій смак.</h3>
+										</div>
+									</div>
+								</div>
+								<div class="subcategories__tab" data-content="2">
+									<div class="subcategories__tab-inner">
+										<div class="subcategories__img">
+											<img src="./assets/img/product-main.png" alt="Image">
+										</div>
+										<div class="subcategories__text text-formatted">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatum voluptatibus
+									beatae incidunt hic corporis in, necessitatibus fugit officiis corrupti ea!
+									Accusamus
+									non expedita quibusdam. Debitis ullam aperiam magni ipsam?
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 				<section class="section our-product">
 					<div class="our-product__container">
 						<h2 class="our-product__title section-title" data-value="Наша продукція">Наша продукція</h2>
@@ -150,7 +311,7 @@
 							<div class="our-product__wrapper swiper-wrapper">
 								<!-- Слайд -->
 								<div class="our-product__slide swiper-slide">
-									<div class="our-product__cart cart-product">
+									<div class="our-product__cart cart-product big-cart">
 										<div class="cart-product__top">
 											<div class="cart-product__logo">
 												<img src="./assets/img/graff-logo.svg" alt="Image">
@@ -172,7 +333,7 @@
 									</div>
 								</div>
 								<div class="our-product__slide swiper-slide">
-									<div class="our-product__cart cart-product">
+									<div class="our-product__cart cart-product big-cart">
 										<div class="cart-product__top">
 											<div class="cart-product__logo">
 												<img src="./assets/img/graff-logo.svg" alt="Image">
@@ -194,7 +355,7 @@
 									</div>
 								</div>
 								<div class="our-product__slide swiper-slide">
-									<div class="our-product__cart cart-product">
+									<div class="our-product__cart cart-product big-cart">
 										<div class="cart-product__top">
 											<div class="cart-product__logo">
 												<img src="./assets/img/graff-logo.svg" alt="Image">
@@ -216,7 +377,7 @@
 									</div>
 								</div>
 								<div class="our-product__slide swiper-slide">
-									<div class="our-product__cart cart-product">
+									<div class="our-product__cart cart-product big-cart">
 										<div class="cart-product__top">
 											<div class="cart-product__logo">
 												<img src="./assets/img/graff-logo.svg" alt="Image">

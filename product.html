@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Product Page</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1750424985002"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1750424985002">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header" data-fls-header-scroll="">
+				<div class="header__container">
+					<a href="" class="header__logo logo-white">
+						<img src="./assets/img/logo.svg" alt="logo">
+					</a>
+					<a href="" class="header__logo logo-black">
+						<img src="./assets/img/logo-footer.svg" alt="logo">
+					</a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link">Бренди</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Співпраця</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Про компанію</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Новини</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+						<button class="menu__btn" type="button">Де купити?</button>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.js?v=1750424985002on">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+					<div class="header__search search">
+						<button class="search__btn-mobile search__btn-mobile--icon-search" type="button"></button>
+						<form class="search__form" id="search-form" action="#">
+							<input class="search__input js-search-input" type="text" name="term" autocomplete="off" placeholder="Пошук...">
+							<button class="search__btn search__btn--icon-search" type="submit"></button>
+							<div class="form-modal">
+								<div class="form-modal__wrap">
+									<div class="form-modal__title">Почніть вводити пошуковий запит, наприклад “Листовий чай”</div>
+									<div class="form-modal__text">Мінімальна довжина пошукового запиту 3 символи</div>
+									<div class="form-modal__list">
+										<div class="form-modal__product product-form">
+											<div class="product-form__img">
+												<img src="./assets/img/product01.png" alt="product">
+											</div>
+											<div class="product-form__content">
+												<h3 class="product-form__title">Англійський сніданок</h3>
+												<div class="product-form__text">
+													Lorem ipsum dolor sit amet consectetur. Id arcu
+										purus
+										phasellus id mattis. Cras turpis risus condimentum sit eget
+										egestas mi. Tristique a enim mauris cras etiam ornare massa.
+												</div>
+											</div>
+										</div>
+										<div class="form-modal__product product-form">
+											<a href="#" class="product-form__img">
+												<img src="./assets/img/product01.png" alt="product">
+											</a>
+											<div class="product-form__content">
+												<a href="#" class="product-form__title">Англійський сніданок</a>
+												<div class="product-form__text">
+													Lorem ipsum dolor sit amet consectetur. Id arcu
+										purus
+										phasellus id mattis. Cras turpis risus condimentum sit eget
+										egestas mi. Tristique a enim mauris cras etiam ornare massa.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="header__lang lang">
+						<button class="lang__btn lang__btn--icon-arrow-down" type="button">UA</button>
+						<nav class="lang__nav">
+							<a class="lang__link" href="#">EN</a>
+							<a class="lang__link" href="#">RU</a>
+						</nav>
+					</div>
+					<button type="button" class="header__btn btn-border">Де купити?</button>
+					<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+						<span></span>
+					</button>
+				</div>
+			</header>
+			<main class="page page--product">
+				<div class="breadcrumbs">
+					<div class="breadcrumbs__container">
+						<nav class="breadcrumbs__nav">
+							<a class="breadcrumbs__link breadcrumbs__link--main" href="#">CUPSOUL</a>
+							<a class="breadcrumbs__link" href="#">Наша продукція</a>
+							<span class="breadcrumbs__link breadcrumbs__link--last">Graff English Breakfast</span>
+						</nav>
+					</div>
+				</div>
+				<section class="product">
+					<div class="product__container">
+						<div class="product__row">
+							<div class="product__col">
+								<div class="product__img">
+									<img src="./assets/img/product-main.png" alt="product logo">
+								</div>
+							</div>
+							<div class="product__col">
+								<div class="product__brand">GRAFF</div>
+								<h1 class="product__title">Англійський сніданок</h1>
+								<div class="product__subtitle">Чай чорний байховий</div>
+								<div class="product__text">
+									<p>
+										Чай чорний байховий Graff English Breakfast - це втілення багатовікової традиції та
+							неповторного смаку, який збуджує дух
+							і наповнює ранок енергією. Створений з унікальної суміші найкращих сортів чорного чаю з
+							Індії, Кенії та Шрі-Ланки, кожен
+							ковток "Англійського сніданку" пропонує глибокий, насичений смак із нотками м'якоті, який
+							ідеально поєднується з молоком
+							або лимоном.
+									</p>
+									<p>
+										Graff - дорогоцінна коштовність благородного чистого смаку та яскравого аромату, що сяє
+							безліччю граней і відтінків.
+							Висока преміальна якість досягається завдяки ювелірній роботі майстрів зі збирання та
+							обробки чайних листків з обраних
+							плантацій світу. Все заради вашого задоволення та натхнення.
+									</p>
+									<p>
+										Умови зберігання: в сухих, чистих і добре провітрюваних приміщеннях вдалині від предметів, що
+							мають сильний запах, при
+							відносній вологості повітря не більше 70% в щільно закритому пакуванні.
+									</p>
+								</div>
+								<a class="btn btn-cream" href="#">
+									Де придбати?
+									<span class="icon-arrow icon-arrow--white"></span>
+								</a>
+							</div>
+						</div>
+						<div class="product__row">
+							<div class="product__col">
+								<div class="product__img">
+									<img src="./assets/img/product-tea.png" alt="product tea">
+								</div>
+							</div>
+							<div class="product__col">
+								<h2 class="product__heading">Характеристики</h2>
+								<ul class="product__list">
+									<li class="product__item">
+										<div class="key">Бренд</div>
+										<div class="value">Graff</div>
+									</li>
+									<li class="product__item">
+										<div class="key">Країна виробник</div>
+										<div class="value">Україна</div>
+									</li>
+									<li class="product__item">
+										<div class="key">Тип чаю</div>
+										<div class="value">Чорний</div>
+									</li>
+									<li class="product__item">
+										<div class="key">Вид чаю</div>
+										<div class="value">Пакетований</div>
+									</li>
+									<li class="product__item">
+										<div class="key">Розмір листа</div>
+										<div class="value">Дрібнолистовий</div>
+									</li>
+									<li class="product__item">
+										<div class="key">Кількість пакетиків</div>
+										<div class="value">20</div>
+									</li>
+									<li class="product__item">
+										<div class="key">Вага упаковки</div>
+										<div class="value">40г</div>
+									</li>
+									<li class="product__item">
+										<div class="key">Упаковка</div>
+										<div class="value">Картонна</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section suggestions">
+					<div class="suggestions__container">
+						<div class="suggestions__wrap">
+							<div class="suggestions__logo">
+								<img src="./assets/img/text-logo-green.svg" alt="text logo">
+							</div>
+							<h2 class="suggestions__title">Пропозиції заварювання чаю</h2>
+							<ul class="suggestions__list">
+								<li class="suggestions__item">
+									<div class="suggestions__text">На одну чашку візьміть один пакетик чаю та залийте 200 мл щойно закипілої води.</div>
+								</li>
+								<li class="suggestions__item">
+									<div class="suggestions__text">
+										Дайте настоятися 5 хвилин
+							обо довше для отримання
+							більш насиченого смаку
+									</div>
+								</li>
+								<li class="suggestions__item">
+									<div class="suggestions__text">
+										Дайте настоятися 5 хвилин
+							обо довше для отримання
+							більш насиченогосмаку
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="section brands">
+					<div class="brands__container">
+						<h2 class="section-title" data-value="Де придбати?">Де придбати?</h2>
+						<ul class="brands__list">
+							<li class="brands__item">
+								<div class="brands__img">
+									<img src="./assets/img/brands/01.png" alt="brand">
+								</div>
+							</li>
+							<li class="brands__item">
+								<div class="brands__img">
+									<img src="./assets/img/brands/02.svg" alt="brand">
+								</div>
+							</li>
+							<li class="brands__item">
+								<div class="brands__img">
+									<img src="./assets/img/brands/03.svg" alt="brand">
+								</div>
+							</li>
+							<li class="brands__item">
+								<div class="brands__img">
+									<img src="./assets/img/brands/04.svg" alt="brand">
+								</div>
+							</li>
+							<li class="brands__item">
+								<div class="brands__img">
+									<img src="./assets/img/brands/05.svg" alt="brand">
+								</div>
+							</li>
+							<li class="brands__item">
+								<div class="brands__img">
+									<img src="./assets/img/brands/06.svg" alt="brand">
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="section interested">
+					<div class="interested__container">
+						<h2 class="section-title" data-value="Більше продуктів">Вас також може зацікавити</h2>
+						<div class="interested__wrap">
+							<ul class="interested__list">
+								<li class="interested__item cart-product">
+									<div class="cart-product__top">
+										<div class="cart-product__logo">
+											<img src="./assets/img/graff-logo.svg" alt="Image">
+										</div>
+										<a href="#" class="cart-product__img">
+											<img src="./assets/img/product01.png" alt="product">
+										</a>
+									</div>
+									<div class="cart-product__content">
+										<a href="#" class="cart-product__title">Золотий пуер</a>
+										<div class="cart-product__text">
+											<p>
+												Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
+									Cras
+									turpis risus condimentum sit eget
+									egestas mi. Tristique a enim mauris cras etiam ornare massa.
+											</p>
+										</div>
+									</div>
+								</li>
+								<li class="interested__item cart-product">
+									<div class="cart-product__top">
+										<div class="cart-product__logo">
+											<img src="./assets/img/graff-logo.svg" alt="Image">
+										</div>
+										<a href="#" class="cart-product__img">
+											<img src="./assets/img/product02.png" alt="product">
+										</a>
+									</div>
+									<div class="cart-product__content">
+										<a href="#" class="cart-product__title">Різдвяний досвід</a>
+										<div class="cart-product__text">
+											<p>
+												Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
+									Cras
+									turpis risus condimentum sit eget
+									egestas mi. Tristique a enim mauris cras etiam ornare massa.
+											</p>
+										</div>
+									</div>
+								</li>
+								<li class="interested__item cart-product">
+									<div class="cart-product__top">
+										<div class="cart-product__logo">
+											<img src="./assets/img/graff-logo.svg" alt="Image">
+										</div>
+										<a href="#" class="cart-product__img">
+											<img src="./assets/img/product03.png" alt="product">
+										</a>
+									</div>
+									<div class="cart-product__content">
+										<a href="#" class="cart-product__title">Бергамот-ваніль</a>
+										<div class="cart-product__text">
+											<p>
+												Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
+									Cras
+									turpis risus condimentum sit eget
+									egestas mi. Tristique a enim mauris cras etiam ornare massa.
+											</p>
+										</div>
+									</div>
+								</li>
+								<li class="interested__item cart-product">
+									<div class="cart-product__top">
+										<div class="cart-product__logo">
+											<img src="./assets/img/graff-logo.svg" alt="Image">
+										</div>
+										<a href="#" class="cart-product__img">
+											<img src="./assets/img/product01.png" alt="product">
+										</a>
+									</div>
+									<div class="cart-product__content">
+										<a href="#" class="cart-product__title">Бергамот-ваніль</a>
+										<div class="cart-product__text">
+											<p>
+												Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
+									Cras
+									turpis risus condimentum sit eget
+									egestas mi. Tristique a enim mauris cras etiam ornare massa.
+											</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="interested__bottom">
+								<a class="btn btn-cream" href="#">
+									Дивитись більше
+									<span class="icon-arrow icon-arrow--white"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__top">
+						<a href="" class="footer__logo">
+							<img src="./assets/img/logo-footer.svg" alt="logo">
+						</a>
+						<nav class="footer__menu">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">Бренди</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Співпраця</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Про компанію</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Новини</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="footer__lang lang">
+							<button class="lang__btn lang__btn--icon-arrow-down" type="button">UA</button>
+							<nav class="lang__nav">
+								<a class="lang__link" href="#">EN</a>
+								<a class="lang__link" href="#">RU</a>
+							</nav>
+						</div>
+						<button type="button" class="footer__btn btn-border">Де купити?</button>
+					</div>
+					<div class="footer__info">TEA & FOOD</div>
+					<div class="footer__bottom">
+						<div class="footer__copyright">2025. © CapSoul. Копіювання матеріалів заборонено.</div>
+						<a class="footer__fenix" href="#">
+							Розробка сайту
+							<img src="./assets/img/fenix-logo.svg" alt="fenix-logo">
+						</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
