@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1750424985002"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1750424985002">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1750425933495"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1750425933495">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -40,12 +40,6 @@
 						</nav>
 						<button class="menu__btn" type="button">Де купити?</button>
 					</div>
-					<!--
-<fetch url="@components/layout/menu/menu.js?v=1750424985002on">
-<each loop='item in response'>
-</each>
-</fetch>
--->
 					<div class="header__search search">
 						<button class="search__btn-mobile search__btn-mobile--icon-search" type="button"></button>
 						<form class="search__form" id="search-form" action="#">
@@ -132,9 +126,9 @@
 							<div class="hero__slide swiper-slide">
 								<div class="hero__container">
 									<div class="hero__content">
-										<h1 class="hero__title">Насолоджуйтеся
+										<h1 class="hero__title" data-swiper-parallax="-50%">Насолоджуйтеся
 								теплими моментами</h1>
-										<div class="hero__text">
+										<div class="hero__text" data-swiper-parallax="-70%">
 											<p>
 												Cupsoul - це місце, де класичні традиції чаювання зустрічаються із сучасним
 									підходом
@@ -150,10 +144,10 @@
 									бажає відкриттів.
 											</p>
 										</div>
-										<a href="/catalog" class="btn-more">
+										<a class="btn-more" href="catalog" data-swiper-parallax="-80%">
 											<span class="icon-arrow icon-arrow--lg"></span>
 											Дивитись більше
-										</button>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -170,10 +164,10 @@
 									особливий ритуал, що наповнює кожен день гармонією та натхненням.
 											</p>
 										</div>
-										<a href="/catalog" class="btn-more" data-swiper-parallax="-80%">
+										<a href="catalog" class="btn-more" data-swiper-parallax="-80%">
 											<span class="icon-arrow icon-arrow--lg"></span>
 											Дивитись більше
-										</button>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -305,23 +299,20 @@
 				<section class="section our-product">
 					<div class="our-product__container">
 						<h2 class="our-product__title section-title" data-value="Наша продукція">Наша продукція</h2>
-						<!-- Оболонка слайдера -->
 						<div data-fls-slider="" class="our-product__slider swiper" js-product-slider="">
-							<!-- Частина слайдера, що рухається -->
 							<div class="our-product__wrapper swiper-wrapper">
-								<!-- Слайд -->
 								<div class="our-product__slide swiper-slide">
 									<div class="our-product__cart cart-product big-cart">
 										<div class="cart-product__top">
 											<div class="cart-product__logo">
 												<img src="./assets/img/graff-logo.svg" alt="Image">
 											</div>
-											<a href="/product" class="cart-product__img">
+											<a href="product" class="cart-product__img">
 												<img src="./assets/img/product01.png" alt="product">
 											</a>
 										</div>
 										<div class="cart-product__content">
-											<a href="/product" class="cart-product__title">Англійський сніданок</a>
+											<a href="product" class="cart-product__title">Англійський сніданок</a>
 											<div class="cart-product__text">
 												<p>
 													Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras
@@ -338,12 +329,12 @@
 											<div class="cart-product__logo">
 												<img src="./assets/img/graff-logo.svg" alt="Image">
 											</div>
-											<a href="/product" class="cart-product__img">
+											<a href="product" class="cart-product__img">
 												<img src="./assets/img/product02.png" alt="product">
 											</a>
 										</div>
 										<div class="cart-product__content">
-											<a href="/product" class="cart-product__title">Лавандова прогулянка</a>
+											<a href="product" class="cart-product__title">Лавандова прогулянка</a>
 											<div class="cart-product__text">
 												<p>
 													Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras
@@ -360,12 +351,12 @@
 											<div class="cart-product__logo">
 												<img src="./assets/img/graff-logo.svg" alt="Image">
 											</div>
-											<a href="/product" class="cart-product__img">
+											<a href="product" class="cart-product__img">
 												<img src="./assets/img/product03.png" alt="product">
 											</a>
 										</div>
 										<div class="cart-product__content">
-											<a href="/product" class="cart-product__title">Вишневий самурай</a>
+											<a href="product" class="cart-product__title">Вишневий самурай</a>
 											<div class="cart-product__text">
 												<p>
 													Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras
@@ -382,12 +373,12 @@
 											<div class="cart-product__logo">
 												<img src="./assets/img/graff-logo.svg" alt="Image">
 											</div>
-											<a href="/product" class="cart-product__img">
+											<a href="product" class="cart-product__img">
 												<img src="./assets/img/product01.png" alt="product">
 											</a>
 										</div>
 										<div class="cart-product__content">
-											<a href="/product" class="cart-product__title">Англійський сніданок</a>
+											<a href="product" class="cart-product__title">Англійський сніданок</a>
 											<div class="cart-product__text">
 												<p>
 													Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras
@@ -399,7 +390,6 @@
 									</div>
 								</div>
 							</div>
-							<!-- Якщо потрібен скролбар -->
 							<div class="swiper-scrollbar"></div>
 						</div>
 					</div>
