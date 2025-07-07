@@ -5,24 +5,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Product Page</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1750425933495"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1750425933495">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1751897875167"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1751897875167">
 	</head>
 	<body>
 		<div class="wrapper">
 			<header data-fls-header="" class="header" data-fls-header-scroll="">
 				<div class="header__container">
-					<a href="" class="header__logo logo-white">
+					<a href="/cupsoul" class="header__logo logo-white">
 						<img src="./assets/img/logo.svg" alt="logo">
 					</a>
-					<a href="" class="header__logo logo-black">
+					<a href="/cupsoul" class="header__logo logo-black">
 						<img src="./assets/img/logo-footer.svg" alt="logo">
 					</a>
 					<div class="header__menu menu">
 						<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item">
-									<a href="#" class="menu__link">Бренди</a>
+									<a href="brands.html" class="menu__link">Бренди</a>
+								</li>
+								<li class="menu__item">
+									<a href="catalog.html" class="menu__link">Каталог</a>
 								</li>
 								<li class="menu__item">
 									<a href="#" class="menu__link">Співпраця</a>
@@ -111,7 +114,7 @@
 						<div class="product__row">
 							<div class="product__col">
 								<div class="product__img">
-									<img src="./assets/img/product-main.png" alt="product logo">
+									<img src="./assets/img/product01.png" alt="product logo">
 								</div>
 							</div>
 							<div class="product__col">
@@ -141,16 +144,21 @@
 							відносній вологості повітря не більше 70% в щільно закритому пакуванні.
 									</p>
 								</div>
-								<a class="btn btn-cream" href="#">
-									Де придбати?
-									<span class="icon-arrow icon-arrow--white"></span>
-								</a>
+								<div class="product__bottom">
+									<a class="btn btn-cream" href="#">
+										Де придбати?
+										<span class="icon-arrow icon-arrow--white"></span>
+									</a>
+								</div>
 							</div>
 						</div>
 						<div class="product__row">
 							<div class="product__col">
-								<div class="product__img">
-									<img src="./assets/img/product-tea.png" alt="product tea">
+								<div class="product__video">
+									<a data-fancybox="" href="https://youtu.be/6DFegDx3mv8">
+										<img src="./assets/img/video-img.jpg" alt="product tea">
+										<button type="button" class="play"></button>
+									</a>
 								</div>
 							</div>
 							<div class="product__col">
@@ -199,7 +207,7 @@
 							<div class="suggestions__logo">
 								<img src="./assets/img/text-logo-green.svg" alt="text logo">
 							</div>
-							<h2 class="suggestions__title">Пропозиції заварювання чаю</h2>
+							<h2 class="suggestions__title">Рекомендації щодо заварювання чаю</h2>
 							<ul class="suggestions__list">
 								<li class="suggestions__item">
 									<div class="suggestions__text">На одну чашку візьміть один пакетик чаю та залийте 200 мл щойно закипілої води.</div>
@@ -212,11 +220,7 @@
 									</div>
 								</li>
 								<li class="suggestions__item">
-									<div class="suggestions__text">
-										Дайте настоятися 5 хвилин
-							обо довше для отримання
-							більш насиченогосмаку
-									</div>
+									<div class="suggestions__text">Смакуйте ароматний чай, зробіть паузу й дозвольте собі мить задоволення.</div>
 								</li>
 							</ul>
 						</div>
@@ -224,7 +228,7 @@
 				</section>
 				<section class="section brands">
 					<div class="brands__container">
-						<h2 class="section-title" data-value="Де придбати?">Де придбати?</h2>
+						<h2 class="section-title">Де придбати?</h2>
 						<ul class="brands__list">
 							<li class="brands__item">
 								<div class="brands__img">
@@ -261,14 +265,11 @@
 				</section>
 				<section class="section interested">
 					<div class="interested__container">
-						<h2 class="section-title" data-value="Більше продуктів">Вас також може зацікавити</h2>
+						<h2 class="section-title">Вас також може зацікавити</h2>
 						<div class="interested__wrap">
 							<ul class="interested__list">
 								<li class="interested__item cart-product">
 									<div class="cart-product__top">
-										<div class="cart-product__logo">
-											<img src="./assets/img/graff-logo.svg" alt="Image">
-										</div>
 										<a href="#" class="cart-product__img">
 											<img src="./assets/img/product01.png" alt="product">
 										</a>
@@ -287,9 +288,6 @@
 								</li>
 								<li class="interested__item cart-product">
 									<div class="cart-product__top">
-										<div class="cart-product__logo">
-											<img src="./assets/img/graff-logo.svg" alt="Image">
-										</div>
 										<a href="#" class="cart-product__img">
 											<img src="./assets/img/product02.png" alt="product">
 										</a>
@@ -308,9 +306,6 @@
 								</li>
 								<li class="interested__item cart-product">
 									<div class="cart-product__top">
-										<div class="cart-product__logo">
-											<img src="./assets/img/graff-logo.svg" alt="Image">
-										</div>
 										<a href="#" class="cart-product__img">
 											<img src="./assets/img/product03.png" alt="product">
 										</a>
@@ -329,9 +324,6 @@
 								</li>
 								<li class="interested__item cart-product">
 									<div class="cart-product__top">
-										<div class="cart-product__logo">
-											<img src="./assets/img/graff-logo.svg" alt="Image">
-										</div>
 										<a href="#" class="cart-product__img">
 											<img src="./assets/img/product01.png" alt="product">
 										</a>
@@ -362,13 +354,16 @@
 			<footer data-fls-footer="" class="footer">
 				<div class="footer__container">
 					<div class="footer__top">
-						<a href="" class="footer__logo">
+						<a href="/cupsoul" class="footer__logo">
 							<img src="./assets/img/logo-footer.svg" alt="logo">
 						</a>
 						<nav class="footer__menu">
 							<ul class="footer__list">
 								<li class="footer__item">
-									<a href="#" class="footer__link">Бренди</a>
+									<a href="brands.html" class="footer__link">Бренди</a>
+								</li>
+								<li class="footer__item">
+									<a href="catalog.html" class="footer__link">Каталог</a>
 								</li>
 								<li class="footer__item">
 									<a href="#" class="footer__link">Співпраця</a>

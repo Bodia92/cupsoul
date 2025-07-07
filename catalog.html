@@ -5,24 +5,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Catalog Page</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1750425933495"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1750425933495">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1751897875167"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1751897875167">
 	</head>
 	<body>
 		<div class="wrapper">
 			<header data-fls-header="" class="header" data-fls-header-scroll="">
 				<div class="header__container">
-					<a href="" class="header__logo logo-white">
+					<a href="/cupsoul" class="header__logo logo-white">
 						<img src="./assets/img/logo.svg" alt="logo">
 					</a>
-					<a href="" class="header__logo logo-black">
+					<a href="/cupsoul" class="header__logo logo-black">
 						<img src="./assets/img/logo-footer.svg" alt="logo">
 					</a>
 					<div class="header__menu menu">
 						<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item">
-									<a href="#" class="menu__link">Бренди</a>
+									<a href="brands.html" class="menu__link">Бренди</a>
+								</li>
+								<li class="menu__item">
+									<a href="catalog.html" class="menu__link">Каталог</a>
 								</li>
 								<li class="menu__item">
 									<a href="#" class="menu__link">Співпраця</a>
@@ -101,272 +104,409 @@
 					<div class="breadcrumbs__container">
 						<nav class="breadcrumbs__nav">
 							<a class="breadcrumbs__link breadcrumbs__link--main" href="#">CUPSOUL</a>
-							<span class="breadcrumbs__link breadcrumbs__link--last">Наша продукція</span>
+							<span class="breadcrumbs__link breadcrumbs__link--last">Каталог продукції</span>
 						</nav>
 					</div>
 				</div>
 				<section class="catalog">
 					<div class="catalog__container">
-						<h1 class="section-title section-title--left" data-value="Наша продукція">Наша продукція</h1>
-						<div class="catalog__row">
-							<div class="catalog__aside">
-								<div data-fls-spollers="" class="spollers">
-									<details class="spollers__item" data-fls-spollers-open="">
-										<summary class="spollers__title">
-											Graff
-											<span class="icon-arrow"></span>
-										</summary>
-										<div class="spollers__body">
-											<div class="spollers__list">
-												<a class="spollers__link active" href="#">Колекція чаю в пакетиках
-										в індивідуальних пакетах (саше)</a>
-												<a class="spollers__link" href="#">Колекція листового чаю</a>
-												<a class="spollers__link" href="#">Колекція чаю в пірамідках</a>
-												<a class="spollers__link" href="#">Колекція чаю в пакетиках</a>
-												<a class="spollers__link" href="#">Колекція чаю у кадді пакетиках</a>
-												<a class="spollers__link" href="#">Колекція чаю для HoReCa</a>
+						<h1 class="section-title">Каталог продукції</h1>
+						<div data-fls-tabs="" class="catalog__tabs tabs-catalog">
+							<nav data-fls-tabs-titles="" class="tabs-catalog__navigation">
+								<button type="button" class="tabs-catalog__title --tab-active">Чай</button>
+								<button type="button" class="tabs-catalog__title">До чаю</button>
+							</nav>
+							<div data-fls-tabs-body="" class="tabs-catalog__content">
+								<div class="tabs-catalog__body">
+									<div class="catalog__row">
+										<div class="catalog__aside">
+											<button class="filter-btn-open btn btn-border" type="button" aria-label="open filter">
+												Фільтр
+												<span class="icon-arrow icon-arrow--cream icon-arrow--rt90"></span>
+											</button>
+											<div class="filter">
+												<div class="filter__top">
+													<h3 class="filter__title">Фільтр</h3>
+													<button class="filter__close" type="button" data-value="filter-close"></button>
+												</div>
+												<div class="filter__inner">
+													<div class="filter__selected selected-filter">
+														<h4 class="selected-filter__title">Ви вибрали</h4>
+														<ul class="selected-filter__list">
+															<li class="selected-filter__item">
+																<a class="selected-filter__link" href="#">
+																	Тип чаю:
+																	<span>Чорний
+															чай</span>
+																</a>
+															</li>
+															<li class="selected-filter__item">
+																<a class="selected-filter__link" href="#">
+																	Бренд:
+																	<span>Graff</span>
+																</a>
+															</li>
+															<li class="selected-filter__item">
+																<a class="selected-filter__link" href="#">
+																	Тип фасування:
+																	<span>Асорті
+															чаю</span>
+																</a>
+															</li>
+														</ul>
+														<a class="selected-filter__clean" href="#">Очистити фільтр</a>
+													</div>
+													<div data-fls-spollers="" class="filter__group">
+														<details class="filter__item" data-fls-spollers-open="">
+															<summary class="filter__heading">Тип чаю</summary>
+															<div class="filter__body">
+																<div class="filter__list">
+																	<label class="custom-checkbox" for="black-tea">
+																		<input type="checkbox" name="black-tea" id="black-tea">
+																		<span class="checkbox"></span>
+																		<span class="text">Чорний чай</span>
+																		<sup class="count">25</sup>
+																	</label>
+																	<label class="custom-checkbox" for="green-tea">
+																		<input type="checkbox" name="green-tea" id="green-tea">
+																		<span class="checkbox"></span>
+																		<span class="text">Зелений чай</span>
+																		<sup class="count">18</sup>
+																	</label>
+																	<label class="custom-checkbox" for="herbal-tea">
+																		<input type="checkbox" name="herbal-tea" id="herbal-tea">
+																		<span class="checkbox"></span>
+																		<span class="text">Трав’яний чай</span>
+																		<sup class="count">5</sup>
+																	</label>
+																	<label class="custom-checkbox" for="puer-tea">
+																		<input type="checkbox" name="puer-tea" id="puer-tea">
+																		<span class="checkbox"></span>
+																		<span class="text">Пуер</span>
+																		<sup class="count">10</sup>
+																	</label>
+																	<label class="custom-checkbox" for="assorted-tea">
+																		<input type="checkbox" name="assorted-tea" id="assorted-tea">
+																		<span class="checkbox"></span>
+																		<span class="text">Асорті чаю</span>
+																		<sup class="count">31</sup>
+																	</label>
+																	<label class="custom-checkbox" for="horeca-tea">
+																		<input type="checkbox" name="horeca-tea" id="horeca-tea">
+																		<span class="checkbox"></span>
+																		<span class="text">Чай для HoReCa</span>
+																		<sup class="count">25</sup>
+																	</label>
+																	<label class="custom-checkbox" for="rare-tea">
+																		<input type="checkbox" name="rare-tea" id="rare-tea">
+																		<span class="checkbox"></span>
+																		<span class="text">Рідкі чаї (концентрат)</span>
+																		<sup class="count">3</sup>
+																	</label>
+																</div>
+															</div>
+														</details>
+														<details class="filter__item" data-fls-spollers-open="">
+															<summary class="filter__heading">Бренд</summary>
+															<div class="filter__body">
+																<div class="filter__list">
+																	<label class="custom-checkbox" for="graff-brand">
+																		<input type="checkbox" name="graff-brand" id="graff-brand">
+																		<span class="checkbox"></span>
+																		<span class="text">Graff</span>
+																		<sup class="count">35</sup>
+																	</label>
+																	<label class="custom-checkbox" for="ritz-barton-brand">
+																		<input type="checkbox" name="ritz-barton-brand" id="ritz-barton-brand">
+																		<span class="checkbox"></span>
+																		<span class="text">Ritz Barton</span>
+																		<sup class="count">12</sup>
+																	</label>
+																	<label class="custom-checkbox" for="name01-brand">
+																		<input type="checkbox" name="name01-brand" id="name01-brand">
+																		<span class="checkbox"></span>
+																		<span class="text">Бренд</span>
+																		<sup class="count">8</sup>
+																	</label>
+																	<label class="custom-checkbox" for="name02-brand">
+																		<input type="checkbox" name="name02-brand" id="name02-brand">
+																		<span class="checkbox"></span>
+																		<span class="text">Бренд</span>
+																		<sup class="count">12</sup>
+																	</label>
+																</div>
+															</div>
+														</details>
+														<details class="filter__item" data-fls-spollers-open="">
+															<summary class="filter__heading">Тип фасування</summary>
+															<div class="filter__body">
+																<div class="filter__list">
+																	<label class="custom-checkbox" for="leaf-type">
+																		<input type="checkbox" name="leaf-type" id="leaf-type">
+																		<span class="checkbox"></span>
+																		<span class="text">Листовий чай</span>
+																		<sup class="count">35</sup>
+																	</label>
+																	<label class="custom-checkbox" for="bags-type">
+																		<input type="checkbox" name="bags-type" id="bags-type">
+																		<span class="checkbox"></span>
+																		<span class="text">Чай в пакетиках</span>
+																		<sup class="count">12</sup>
+																	</label>
+																	<label class="custom-checkbox" for="pyramids-type">
+																		<input type="checkbox" name="pyramids-type" id="pyramids-type">
+																		<span class="checkbox"></span>
+																		<span class="text">Чай в пірамідках</span>
+																		<sup class="count">8</sup>
+																	</label>
+																	<label class="custom-checkbox" for="assorted-type">
+																		<input type="checkbox" name="assorted-type" id="assorted-type">
+																		<span class="checkbox"></span>
+																		<span class="text">Асорті чаю</span>
+																		<sup class="count">14</sup>
+																	</label>
+																	<label class="custom-checkbox" for="sachet-type">
+																		<input type="checkbox" name="sachet-type" id="sachet-type">
+																		<span class="checkbox"></span>
+																		<span class="text">Чай у саше</span>
+																		<sup class="count">19</sup>
+																	</label>
+																</div>
+															</div>
+														</details>
+													</div>
+													<div class="filter__bottom">
+														<button class="filter__btn-mobile btn btn-cream">
+															<span>
+																Показати
+																<span class="count">232</span>
+																товари
+															</span>
+															<span class="icon-arrow icon-arrow--white"></span>
+														</button>
+													</div>
+												</div>
 											</div>
 										</div>
-									</details>
-									<details class="spollers__item">
-										<summary class="spollers__title">
-											Ritz Barton
-											<span class="icon-arrow"></span>
-										</summary>
-										<div class="spollers__body">
-											<div class="spollers__list">
-												<a class="spollers__link active" href="#">Колекція чаю в пакетиках
-										в індивідуальних пакетах (саше)</a>
-												<a class="spollers__link" href="#">Колекція листового чаю</a>
-												<a class="spollers__link" href="#">Колекція чаю в пірамідках</a>
-												<a class="spollers__link" href="#">Колекція чаю в пакетиках</a>
-												<a class="spollers__link" href="#">Колекція чаю у кадді пакетиках</a>
-												<a class="spollers__link" href="#">Колекція чаю для HoReCa</a>
+										<div class="catalog__content">
+											<div class="catalog__inner">
+												<div class="catalog__list">
+													<div class="catalog__item cart-product">
+														<div class="cart-product__top">
+															<!--
+<div class="cart-product__logo">
+<img src="@img/graff-logo.svg" alt="Image">
+</div>
+-->
+															<a href="#" class="cart-product__img">
+																<img src="./assets/img/product01.png" alt="product">
+															</a>
+														</div>
+														<div class="cart-product__content">
+															<a href="#" class="cart-product__title">Англійський сніданок</a>
+															<div class="cart-product__text">
+																<p>
+																	Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus
+														id mattis.
+														Cras
+														turpis risus condimentum sit eget
+														egestas mi. Tristique a enim mauris cras etiam ornare massa.
+																</p>
+															</div>
+														</div>
+													</div>
+													<div class="catalog__item cart-product">
+														<div class="cart-product__top">
+															<!--
+<div class="cart-product__logo">
+<img src="@img/graff-logo.svg" alt="Image">
+</div>
+-->
+															<a href="#" class="cart-product__img">
+																<img src="./assets/img/product02.png" alt="product">
+															</a>
+														</div>
+														<div class="cart-product__content">
+															<a href="#" class="cart-product__title">Лавандова прогулянка</a>
+															<div class="cart-product__text">
+																<p>
+																	Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus
+														id mattis.
+														Cras
+														turpis risus condimentum sit eget
+														egestas mi. Tristique a enim mauris cras etiam ornare massa.
+																</p>
+															</div>
+														</div>
+													</div>
+													<div class="catalog__item cart-product">
+														<div class="cart-product__top">
+															<a href="#" class="cart-product__img">
+																<img src="./assets/img/product03.png" alt="product">
+															</a>
+														</div>
+														<div class="cart-product__content">
+															<a href="#" class="cart-product__title">Вишневий самурай</a>
+															<div class="cart-product__text">
+																<p>
+																	Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus
+														id mattis.
+														Cras
+														turpis risus condimentum sit eget
+														egestas mi. Tristique a enim mauris cras etiam ornare massa.
+																</p>
+															</div>
+														</div>
+													</div>
+													<div class="catalog__item cart-product">
+														<div class="cart-product__top">
+															<!--
+<div class="cart-product__logo">
+<img src="@img/graff-logo.svg" alt="Image">
+</div>
+-->
+															<a href="#" class="cart-product__img">
+																<img src="./assets/img/product01.png" alt="product">
+															</a>
+														</div>
+														<div class="cart-product__content">
+															<a href="#" class="cart-product__title">Англійський сніданок</a>
+															<div class="cart-product__text">
+																<p>
+																	Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus
+														id mattis.
+														Cras
+														turpis risus condimentum sit eget
+														egestas mi. Tristique a enim mauris cras etiam ornare massa.
+																</p>
+															</div>
+														</div>
+													</div>
+													<div class="catalog__item cart-product">
+														<div class="cart-product__top">
+															<!--
+<div class="cart-product__logo">
+<img src="@img/graff-logo.svg" alt="Image">
+</div>
+-->
+															<a href="#" class="cart-product__img">
+																<img src="./assets/img/product02.png" alt="product">
+															</a>
+														</div>
+														<div class="cart-product__content">
+															<a href="#" class="cart-product__title">Лавандова прогулянка</a>
+															<div class="cart-product__text">
+																<p>
+																	Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus
+														id mattis.
+														Cras
+														turpis risus condimentum sit eget
+														egestas mi. Tristique a enim mauris cras etiam ornare massa.
+																</p>
+															</div>
+														</div>
+													</div>
+													<div class="catalog__item cart-product">
+														<div class="cart-product__top">
+															<!--
+<div class="cart-product__logo">
+<img src="@img/graff-logo.svg" alt="Image">
+</div>
+-->
+															<a href="#" class="cart-product__img">
+																<img src="./assets/img/product03.png" alt="product">
+															</a>
+														</div>
+														<div class="cart-product__content">
+															<a href="#" class="cart-product__title">Вишневий самурай</a>
+															<div class="cart-product__text">
+																<p>
+																	Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus
+														id mattis.
+														Cras
+														turpis risus condimentum sit eget
+														egestas mi. Tristique a enim mauris cras etiam ornare massa.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="pagination">
+													<ul>
+														<li class="prev" aria-label="« Назад">
+															<a class="--icon-arrow-prev" href="#"></a>
+														</li>
+														<li class="active">
+															<a href="#">1</a>
+														</li>
+														<li>
+															<a href="#">2</a>
+														</li>
+														<li class="gap">
+															<span>...</span>
+														</li>
+														<li class="last">
+															<a href="#">5</a>
+														</li>
+														<li class="next" aria-label="Вперед »">
+															<a class="--icon-arrow-next" href="#"></a>
+														</li>
+													</ul>
+												</div>
 											</div>
 										</div>
-									</details>
+									</div>
 								</div>
+								<div class="tabs-catalog__body">Вміст другого таба</div>
 							</div>
-							<div class="catalog__content">
-								<div class="banner">
-									<div class="banner__img">
-										<img src="./assets/img/banner01.jpg" alt="Image">
-									</div>
-									<div class="banner__content">
-										<h3 class="banner__title">Насолоджуйтеся
-								теплими моментами</h3>
-										<div class="banner__text">
-											<p>
-												У нашому асортименті знайдеться ідеальне рішення як для шанувальників витончених
-									класичних купажів, так і для тих, хто
-									бажає відкриттів.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="catalog__text">
-									<p>
-										Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras turpis risus
-							condimentum sit eget
-							egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim mauris cras
-							etiam ornare massa.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras turpis risus
-							condimentum sit eget
-							egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim mauris cras
-							etiam ornare massa.
-									</p>
-								</div>
-								<div class="catalog__inner">
-									<div class="catalog__list">
-										<div class="catalog__item cart-product">
-											<div class="cart-product__top">
-												<div class="cart-product__logo">
-													<img src="./assets/img/graff-logo.svg" alt="Image">
-												</div>
-												<a href="#" class="cart-product__img">
-													<img src="./assets/img/product01.png" alt="product">
-												</a>
-											</div>
-											<div class="cart-product__content">
-												<a href="#" class="cart-product__title">Англійський сніданок</a>
-												<div class="cart-product__text">
-													<p>
-														Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
-											Cras
-											turpis risus condimentum sit eget
-											egestas mi. Tristique a enim mauris cras etiam ornare massa.
-													</p>
-												</div>
-											</div>
-										</div>
-										<div class="catalog__item cart-product">
-											<div class="cart-product__top">
-												<div class="cart-product__logo">
-													<img src="./assets/img/graff-logo.svg" alt="Image">
-												</div>
-												<a href="#" class="cart-product__img">
-													<img src="./assets/img/product02.png" alt="product">
-												</a>
-											</div>
-											<div class="cart-product__content">
-												<a href="#" class="cart-product__title">Лавандова прогулянка</a>
-												<div class="cart-product__text">
-													<p>
-														Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
-											Cras
-											turpis risus condimentum sit eget
-											egestas mi. Tristique a enim mauris cras etiam ornare massa.
-													</p>
-												</div>
-											</div>
-										</div>
-										<div class="catalog__item cart-product">
-											<div class="cart-product__top">
-												<div class="cart-product__logo">
-													<img src="./assets/img/graff-logo.svg" alt="Image">
-												</div>
-												<a href="#" class="cart-product__img">
-													<img src="./assets/img/product03.png" alt="product">
-												</a>
-											</div>
-											<div class="cart-product__content">
-												<a href="#" class="cart-product__title">Вишневий самурай</a>
-												<div class="cart-product__text">
-													<p>
-														Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
-											Cras
-											turpis risus condimentum sit eget
-											egestas mi. Tristique a enim mauris cras etiam ornare massa.
-													</p>
-												</div>
-											</div>
-										</div>
-										<div class="catalog__item cart-product">
-											<div class="cart-product__top">
-												<div class="cart-product__logo">
-													<img src="./assets/img/graff-logo.svg" alt="Image">
-												</div>
-												<a href="#" class="cart-product__img">
-													<img src="./assets/img/product01.png" alt="product">
-												</a>
-											</div>
-											<div class="cart-product__content">
-												<a href="#" class="cart-product__title">Англійський сніданок</a>
-												<div class="cart-product__text">
-													<p>
-														Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
-											Cras
-											turpis risus condimentum sit eget
-											egestas mi. Tristique a enim mauris cras etiam ornare massa.
-													</p>
-												</div>
-											</div>
-										</div>
-										<div class="catalog__item cart-product">
-											<div class="cart-product__top">
-												<div class="cart-product__logo">
-													<img src="./assets/img/graff-logo.svg" alt="Image">
-												</div>
-												<a href="#" class="cart-product__img">
-													<img src="./assets/img/product02.png" alt="product">
-												</a>
-											</div>
-											<div class="cart-product__content">
-												<a href="#" class="cart-product__title">Лавандова прогулянка</a>
-												<div class="cart-product__text">
-													<p>
-														Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
-											Cras
-											turpis risus condimentum sit eget
-											egestas mi. Tristique a enim mauris cras etiam ornare massa.
-													</p>
-												</div>
-											</div>
-										</div>
-										<div class="catalog__item cart-product">
-											<div class="cart-product__top">
-												<div class="cart-product__logo">
-													<img src="./assets/img/graff-logo.svg" alt="Image">
-												</div>
-												<a href="#" class="cart-product__img">
-													<img src="./assets/img/product03.png" alt="product">
-												</a>
-											</div>
-											<div class="cart-product__content">
-												<a href="#" class="cart-product__title">Вишневий самурай</a>
-												<div class="cart-product__text">
-													<p>
-														Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
-											Cras
-											turpis risus condimentum sit eget
-											egestas mi. Tristique a enim mauris cras etiam ornare massa.
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="pagination">
-										<ul>
-											<li class="prev" aria-label="« Назад">
-												<a class="--icon-arrow-prev" href="#"></a>
-											</li>
-											<li class="active">
-												<a href="#">1</a>
-											</li>
-											<li>
-												<a href="#">2</a>
-											</li>
-											<li class="gap">
-												<span>...</span>
-											</li>
-											<li class="last">
-												<a href="#">5</a>
-											</li>
-											<li class="next" aria-label="Вперед »">
-												<a class="--icon-arrow-next" href="#"></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="seo-text text-formatted">
-									<h2>Насолоджуйся теплими моментами</h2>
-									<p>
-										Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras turpis risus
-							condimentum sit eget
-							egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim mauris cras
-							etiam ornare massa.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras turpis risus
-							condimentum sit eget
-							egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim mauris cras
-							etiam ornare massa.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras turpis risus
-							condimentum sit eget
-							egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim mauris cras
-							etiam ornare massa.
-									</p>
-									<h3>Зустрічайте новий рік з CupSoul</h3>
-									<p>
-										Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras turpis risus
-							condimentum sit eget
-							egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim mauris cras
-							etiam ornare massa. Tristique
-							a enim mauris cras etiam ornare massa. Tristique a enim mauris cras etiam ornare massa.
-									</p>
-									<p>
-										Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras turpis risus
-							condimentum sit eget
-							egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim mauris cras
-							etiam ornare massa. Tristique
-							a enim mauris cras etiam ornare massa. Tristique a enim mauris cras etiam ornare massa.
-									</p>
-								</div>
-							</div>
+						</div>
+						<div class="seo-text text-formatted">
+							<h2>Насолоджуйся теплими моментами</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras
+					turpis risus
+					condimentum sit eget
+					egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim
+					mauris cras
+					etiam ornare massa.
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras
+					turpis risus
+					condimentum sit eget
+					egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim
+					mauris cras
+					etiam ornare massa.
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras
+					turpis risus
+					condimentum sit eget
+					egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim
+					mauris cras
+					etiam ornare massa.
+							</p>
+							<h3>Зустрічайте новий рік з CupSoul</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras
+					turpis risus
+					condimentum sit eget
+					egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim
+					mauris cras
+					etiam ornare massa. Tristique
+					a enim mauris cras etiam ornare massa. Tristique a enim mauris cras etiam ornare
+					massa.
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis. Cras
+					turpis risus
+					condimentum sit eget
+					egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a enim
+					mauris cras
+					etiam ornare massa. Tristique
+					a enim mauris cras etiam ornare massa. Tristique a enim mauris cras etiam ornare
+					massa.
+							</p>
 						</div>
 					</div>
 				</section>
@@ -374,13 +514,16 @@
 			<footer data-fls-footer="" class="footer">
 				<div class="footer__container">
 					<div class="footer__top">
-						<a href="" class="footer__logo">
+						<a href="/cupsoul" class="footer__logo">
 							<img src="./assets/img/logo-footer.svg" alt="logo">
 						</a>
 						<nav class="footer__menu">
 							<ul class="footer__list">
 								<li class="footer__item">
-									<a href="#" class="footer__link">Бренди</a>
+									<a href="brands.html" class="footer__link">Бренди</a>
+								</li>
+								<li class="footer__item">
+									<a href="catalog.html" class="footer__link">Каталог</a>
 								</li>
 								<li class="footer__item">
 									<a href="#" class="footer__link">Співпраця</a>
