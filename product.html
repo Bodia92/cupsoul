@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Product Page</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1751897875167"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1751897875167">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1751972686623"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1751972686623">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -46,25 +46,36 @@
 					<div class="header__search search">
 						<button class="search__btn-mobile search__btn-mobile--icon-search" type="button"></button>
 						<form class="search__form" id="search-form" action="#">
-							<input class="search__input js-search-input" type="text" name="term" autocomplete="off" placeholder="Пошук...">
-							<button class="search__btn search__btn--icon-search" type="submit"></button>
+							<div class="search__top">
+								<div class="search__heading">Швидкий пошук</div>
+								<button class="search__close" type="button" aria-label="search close"></button>
+							</div>
+							<div class="search__group">
+								<input class="search__input js-search-input" type="text" name="term" autocomplete="off" placeholder="Пошук...">
+								<button class="search__btn search__btn--icon-search" type="submit"></button>
+							</div>
 							<div class="form-modal">
 								<div class="form-modal__wrap">
-									<div class="form-modal__title">Почніть вводити пошуковий запит, наприклад “Листовий чай”</div>
-									<div class="form-modal__text">Мінімальна довжина пошукового запиту 3 символи</div>
+									<div class="form-modal__content">
+										<div class="form-modal__title">Почніть вводити пошуковий запит, наприклад “Листовий чай”</div>
+										<div class="form-modal__text">Мінімальна довжина пошукового запиту 3 символи</div>
+									</div>
 									<div class="form-modal__list">
 										<div class="form-modal__product product-form">
-											<div class="product-form__img">
+											<a href="#" class="product-form__img">
 												<img src="./assets/img/product01.png" alt="product">
-											</div>
+											</a>
 											<div class="product-form__content">
-												<h3 class="product-form__title">Англійський сніданок</h3>
-												<div class="product-form__text">
-													Lorem ipsum dolor sit amet consectetur. Id arcu
-										purus
-										phasellus id mattis. Cras turpis risus condimentum sit eget
-										egestas mi. Tristique a enim mauris cras etiam ornare massa.
-												</div>
+												<a href="#" class="product-form__title">
+													Англійський сніданок
+													<!-- ф -->
+													<div class="product-form__text">
+														Lorem ipsum dolor sit amet consectetur. Id arcu
+											purus
+											phasellus id mattis. Cras turpis risus condimentum sit eget
+											egestas mi. Tristique a enim mauris cras etiam ornare massa.
+													</div>
+												</a>
 											</div>
 										</div>
 										<div class="form-modal__product product-form">
