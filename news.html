@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>News Page</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1752070409115"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1752070409115">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header" data-fls-header-scroll="">
+				<div class="header__container">
+					<a href="/cupsoul" class="header__logo logo-white">
+						<img src="./assets/img/logo.svg" alt="logo">
+					</a>
+					<a href="/cupsoul" class="header__logo logo-black">
+						<img src="./assets/img/logo-footer.svg" alt="logo">
+					</a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="brands.html" class="menu__link">Бренди</a>
+								</li>
+								<li class="menu__item">
+									<a href="catalog.html" class="menu__link">Каталог</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Співпраця</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Про компанію</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Новини</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+						<button class="menu__btn" type="button">Де купити?</button>
+					</div>
+					<div class="header__search search">
+						<button class="search__btn-mobile search__btn-mobile--icon-search" type="button"></button>
+						<form class="search__form" id="search-form" action="#">
+							<div class="search__top">
+								<div class="search__heading">Швидкий пошук</div>
+								<button class="search__close" type="button" aria-label="search close"></button>
+							</div>
+							<div class="search__group">
+								<input class="search__input js-search-input" type="text" name="term" autocomplete="off" placeholder="Пошук...">
+								<button class="search__btn search__btn--icon-search" type="submit"></button>
+							</div>
+							<div class="form-modal">
+								<div class="form-modal__wrap">
+									<div class="form-modal__content">
+										<div class="form-modal__title">Почніть вводити пошуковий запит, наприклад “Листовий чай”</div>
+										<div class="form-modal__text">Мінімальна довжина пошукового запиту 3 символи</div>
+									</div>
+									<div class="form-modal__list">
+										<div class="form-modal__product product-form">
+											<a href="#" class="product-form__img">
+												<img src="./assets/img/product01.png" alt="product">
+											</a>
+											<div class="product-form__content">
+												<a href="#" class="product-form__title">
+													Англійський сніданок
+													<!-- ф -->
+													<div class="product-form__text">
+														Lorem ipsum dolor sit amet consectetur. Id arcu
+											purus
+											phasellus id mattis. Cras turpis risus condimentum sit eget
+											egestas mi. Tristique a enim mauris cras etiam ornare massa.
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="form-modal__product product-form">
+											<a href="#" class="product-form__img">
+												<img src="./assets/img/product01.png" alt="product">
+											</a>
+											<div class="product-form__content">
+												<a href="#" class="product-form__title">Англійський сніданок</a>
+												<div class="product-form__text">
+													Lorem ipsum dolor sit amet consectetur. Id arcu
+										purus
+										phasellus id mattis. Cras turpis risus condimentum sit eget
+										egestas mi. Tristique a enim mauris cras etiam ornare massa.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="header__lang lang">
+						<button class="lang__btn lang__btn--icon-arrow-down" type="button">UA</button>
+						<nav class="lang__nav">
+							<a class="lang__link" href="#">EN</a>
+							<a class="lang__link" href="#">RU</a>
+						</nav>
+					</div>
+					<button type="button" class="header__btn btn-border">Де купити?</button>
+					<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+						<span></span>
+					</button>
+				</div>
+			</header>
+			<main class="page page--news">
+				<div class="breadcrumbs">
+					<div class="breadcrumbs__container">
+						<nav class="breadcrumbs__nav">
+							<a class="breadcrumbs__link breadcrumbs__link--main" href="#">CUPSOUL</a>
+							<span class="breadcrumbs__link breadcrumbs__link--last">Новини</span>
+						</nav>
+					</div>
+				</div>
+				<section class="news">
+					<div class="news__container">
+						<h1 class="section-title">Новини та публікації</h1>
+						<div data-fls-tabs="" class="news__tabs tabs-catalog">
+							<nav data-fls-tabs-titles="" class="tabs-catalog__navigation">
+								<button type="button" class="tabs-catalog__title --tab-active">Усі</button>
+								<button type="button" class="tabs-catalog__title">Чайні традиції</button>
+								<button type="button" class="tabs-catalog__title">Заварювання чаю</button>
+								<button type="button" class="tabs-catalog__title">Види чаю</button>
+							</nav>
+							<div data-fls-tabs-body="" class="tabs-catalog__content">
+								<div class="tabs-catalog__body">
+									<div class="news__list">
+										<div class="news__item news-item">
+											<a href="#" class="news-item__img">
+												<img src="./assets/img/news01.png" alt="news">
+											</a>
+											<div class="news-item__content">
+												<div class="news-item__top">
+													<div class="news-item__heading">чайні традиції у різних країнах</div>
+													<div class="news-item__data">25.03.2024</div>
+												</div>
+												<h3 class="news-item__title">
+													<a class="news-item__link" href="#">
+														Розігруємо 2 квитки
+											на цю
+											магічну подію, де ти зможеш завітати до
+											нашого казкового чайного будиночка
+													</a>
+												</h3>
+												<div class="news-item__text">
+													<p>
+														Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
+											Cras turpis
+											risus condimentum sit eget
+											egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a
+											enim mauris
+											cras etiam ornare massa.
+													</p>
+												</div>
+											</div>
+											<a href="#" class="btn-more">
+												<span class="icon-arrow icon-arrow--white"></span>
+												Читати
+									публікацію
+											</a>
+										</div>
+										<div class="news__item news-item">
+											<a href="#" class="news-item__img">
+												<img src="./assets/img/news02.png" alt="news">
+											</a>
+											<div class="news-item__content">
+												<div class="news-item__top">
+													<div class="news-item__heading">як правильно заварювати чай</div>
+													<div class="news-item__data">25.03.2024</div>
+												</div>
+												<h3 class="news-item__title">
+													<a class="news-item__link" href="#">
+														Розігруємо 2 квитки
+											на цю
+											магічну подію, де ти зможеш завітати до
+											нашого казкового чайного будиночка
+													</a>
+												</h3>
+												<div class="news-item__text">
+													<p>
+														Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
+											Cras turpis
+											risus condimentum sit eget
+											egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a
+											enim mauris
+											cras etiam ornare massa.
+													</p>
+												</div>
+											</div>
+											<a href="#" class="btn-more">
+												<span class="icon-arrow icon-arrow--white"></span>
+												Читати
+									публікацію
+											</a>
+										</div>
+										<div class="news__item news-item">
+											<a href="#" class="news-item__img">
+												<img src="./assets/img/news03.png" alt="news">
+											</a>
+											<div class="news-item__content">
+												<div class="news-item__top">
+													<div class="news-item__heading">Види чаю та їх особливості</div>
+													<div class="news-item__data">25.03.2024</div>
+												</div>
+												<h3 class="news-item__title">
+													<a class="news-item__link" href="#">
+														Розігруємо 2 квитки
+											на цю
+											магічну подію, де ти зможеш завітати до
+											нашого казкового чайного будиночка
+													</a>
+												</h3>
+												<div class="news-item__text">
+													<p>
+														Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
+											Cras turpis
+											risus condimentum sit eget
+											egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a
+											enim mauris
+											cras etiam ornare massa.
+													</p>
+												</div>
+											</div>
+											<a href="#" class="btn-more">
+												<span class="icon-arrow icon-arrow--white"></span>
+												Читати
+									публікацію
+											</a>
+										</div>
+									</div>
+									<div class="pagination">
+										<ul>
+											<li class="prev" aria-label="« Назад">
+												<a class="--icon-arrow-prev" href="#"></a>
+											</li>
+											<li class="active">
+												<a href="#">1</a>
+											</li>
+											<li>
+												<a href="#">2</a>
+											</li>
+											<li class="gap">
+												<span>...</span>
+											</li>
+											<li class="last">
+												<a href="#">5</a>
+											</li>
+											<li class="next" aria-label="Вперед »">
+												<a class="--icon-arrow-next" href="#"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="tabs-catalog__body">
+									<div class="news__list">
+										<div class="news__item news-item">
+											<a href="#" class="news-item__img">
+												<img src="./assets/img/news02.png" alt="news">
+											</a>
+											<div class="news-item__content">
+												<div class="news-item__top">
+													<div class="news-item__heading">як правильно заварювати чай</div>
+													<div class="news-item__data">25.03.2024</div>
+												</div>
+												<h3 class="news-item__title">
+													<a class="news-item__link" href="#">
+														Розігруємо 2 квитки
+											на цю
+											магічну подію, де ти зможеш завітати до
+											нашого казкового чайного будиночка
+													</a>
+												</h3>
+												<div class="news-item__text">
+													<p>
+														Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
+											Cras turpis
+											risus condimentum sit eget
+											egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a
+											enim mauris
+											cras etiam ornare massa.
+													</p>
+												</div>
+											</div>
+											<a href="#" class="btn-more">
+												<span class="icon-arrow icon-arrow--white"></span>
+												Читати
+									публікацію
+											</a>
+										</div>
+										<div class="news__item news-item">
+											<a href="#" class="news-item__img">
+												<img src="./assets/img/news03.png" alt="news">
+											</a>
+											<div class="news-item__content">
+												<div class="news-item__top">
+													<div class="news-item__heading">Види чаю та їх особливості</div>
+													<div class="news-item__data">25.03.2024</div>
+												</div>
+												<h3 class="news-item__title">
+													<a class="news-item__link" href="#">
+														Розігруємо 2 квитки
+											на цю
+											магічну подію, де ти зможеш завітати до
+											нашого казкового чайного будиночка
+													</a>
+												</h3>
+												<div class="news-item__text">
+													<p>
+														Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
+											Cras turpis
+											risus condimentum sit eget
+											egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a
+											enim mauris
+											cras etiam ornare massa.
+													</p>
+												</div>
+											</div>
+											<a href="#" class="btn-more">
+												<span class="icon-arrow icon-arrow--white"></span>
+												Читати
+									публікацію
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="tabs-catalog__body">
+									<div class="news__list">
+										<div class="news__item news-item">
+											<a href="#" class="news-item__img">
+												<img src="./assets/img/news03.png" alt="news">
+											</a>
+											<div class="news-item__content">
+												<div class="news-item__top">
+													<div class="news-item__heading">Види чаю та їх особливості</div>
+													<div class="news-item__data">25.03.2024</div>
+												</div>
+												<h3 class="news-item__title">
+													<a class="news-item__link" href="#">
+														Розігруємо 2 квитки
+											на цю
+											магічну подію, де ти зможеш завітати до
+											нашого казкового чайного будиночка
+													</a>
+												</h3>
+												<div class="news-item__text">
+													<p>
+														Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
+											Cras turpis
+											risus condimentum sit eget
+											egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a
+											enim mauris
+											cras etiam ornare massa.
+													</p>
+												</div>
+											</div>
+											<a href="#" class="btn-more">
+												<span class="icon-arrow icon-arrow--white"></span>
+												Читати
+									публікацію
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="tabs-catalog__body">
+									<div class="news__list">
+										<div class="news__item news-item">
+											<a href="#" class="news-item__img">
+												<img src="./assets/img/news01.png" alt="news">
+											</a>
+											<div class="news-item__content">
+												<div class="news-item__top">
+													<div class="news-item__heading">чайні традиції у різних країнах</div>
+													<div class="news-item__data">25.03.2024</div>
+												</div>
+												<h3 class="news-item__title">
+													<a class="news-item__link" href="#">
+														Розігруємо 2 квитки
+											на цю
+											магічну подію, де ти зможеш завітати до
+											нашого казкового чайного будиночка
+													</a>
+												</h3>
+												<div class="news-item__text">
+													<p>
+														Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
+											Cras turpis
+											risus condimentum sit eget
+											egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a
+											enim mauris
+											cras etiam ornare massa.
+													</p>
+												</div>
+											</div>
+											<a href="#" class="btn-more">
+												<span class="icon-arrow icon-arrow--white"></span>
+												Читати
+									публікацію
+											</a>
+										</div>
+										<div class="news__item news-item">
+											<a href="#" class="news-item__img">
+												<img src="./assets/img/news03.png" alt="news">
+											</a>
+											<div class="news-item__content">
+												<div class="news-item__top">
+													<div class="news-item__heading">Види чаю та їх особливості</div>
+													<div class="news-item__data">25.03.2024</div>
+												</div>
+												<h3 class="news-item__title">
+													<a class="news-item__link" href="#">
+														Розігруємо 2 квитки
+											на цю
+											магічну подію, де ти зможеш завітати до
+											нашого казкового чайного будиночка
+													</a>
+												</h3>
+												<div class="news-item__text">
+													<p>
+														Lorem ipsum dolor sit amet consectetur. Id arcu purus phasellus id mattis.
+											Cras turpis
+											risus condimentum sit eget
+											egestas mi. Tristique a enim mauris cras etiam ornare massa. Tristique a
+											enim mauris
+											cras etiam ornare massa.
+													</p>
+												</div>
+											</div>
+											<a href="#" class="btn-more">
+												<span class="icon-arrow icon-arrow--white"></span>
+												Читати
+									публікацію
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__top">
+						<a href="/cupsoul" class="footer__logo">
+							<img src="./assets/img/logo-footer.svg" alt="logo">
+						</a>
+						<nav class="footer__menu">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="brands.html" class="footer__link">Бренди</a>
+								</li>
+								<li class="footer__item">
+									<a href="catalog.html" class="footer__link">Каталог</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Співпраця</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Про компанію</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Новини</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="footer__lang lang">
+							<button class="lang__btn lang__btn--icon-arrow-down" type="button">UA</button>
+							<nav class="lang__nav">
+								<a class="lang__link" href="#">EN</a>
+								<a class="lang__link" href="#">RU</a>
+							</nav>
+						</div>
+						<button type="button" class="footer__btn btn-border">Де купити?</button>
+					</div>
+					<div class="footer__info">TEA & FOOD</div>
+					<div class="footer__bottom">
+						<div class="footer__copyright">2025. © CapSoul. Копіювання матеріалів заборонено.</div>
+						<a class="footer__fenix" href="#">
+							Розробка сайту
+							<img src="./assets/img/fenix-logo.svg" alt="fenix-logo">
+						</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

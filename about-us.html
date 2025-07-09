@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>About Us Page</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1752070409115"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1752070409115">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header" data-fls-header-scroll="">
+				<div class="header__container">
+					<a href="/cupsoul" class="header__logo logo-white">
+						<img src="./assets/img/logo.svg" alt="logo">
+					</a>
+					<a href="/cupsoul" class="header__logo logo-black">
+						<img src="./assets/img/logo-footer.svg" alt="logo">
+					</a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="brands.html" class="menu__link">Бренди</a>
+								</li>
+								<li class="menu__item">
+									<a href="catalog.html" class="menu__link">Каталог</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Співпраця</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Про компанію</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Новини</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+						<button class="menu__btn" type="button">Де купити?</button>
+					</div>
+					<div class="header__search search">
+						<button class="search__btn-mobile search__btn-mobile--icon-search" type="button"></button>
+						<form class="search__form" id="search-form" action="#">
+							<div class="search__top">
+								<div class="search__heading">Швидкий пошук</div>
+								<button class="search__close" type="button" aria-label="search close"></button>
+							</div>
+							<div class="search__group">
+								<input class="search__input js-search-input" type="text" name="term" autocomplete="off" placeholder="Пошук...">
+								<button class="search__btn search__btn--icon-search" type="submit"></button>
+							</div>
+							<div class="form-modal">
+								<div class="form-modal__wrap">
+									<div class="form-modal__content">
+										<div class="form-modal__title">Почніть вводити пошуковий запит, наприклад “Листовий чай”</div>
+										<div class="form-modal__text">Мінімальна довжина пошукового запиту 3 символи</div>
+									</div>
+									<div class="form-modal__list">
+										<div class="form-modal__product product-form">
+											<a href="#" class="product-form__img">
+												<img src="./assets/img/product01.png" alt="product">
+											</a>
+											<div class="product-form__content">
+												<a href="#" class="product-form__title">
+													Англійський сніданок
+													<!-- ф -->
+													<div class="product-form__text">
+														Lorem ipsum dolor sit amet consectetur. Id arcu
+											purus
+											phasellus id mattis. Cras turpis risus condimentum sit eget
+											egestas mi. Tristique a enim mauris cras etiam ornare massa.
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="form-modal__product product-form">
+											<a href="#" class="product-form__img">
+												<img src="./assets/img/product01.png" alt="product">
+											</a>
+											<div class="product-form__content">
+												<a href="#" class="product-form__title">Англійський сніданок</a>
+												<div class="product-form__text">
+													Lorem ipsum dolor sit amet consectetur. Id arcu
+										purus
+										phasellus id mattis. Cras turpis risus condimentum sit eget
+										egestas mi. Tristique a enim mauris cras etiam ornare massa.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="header__lang lang">
+						<button class="lang__btn lang__btn--icon-arrow-down" type="button">UA</button>
+						<nav class="lang__nav">
+							<a class="lang__link" href="#">EN</a>
+							<a class="lang__link" href="#">RU</a>
+						</nav>
+					</div>
+					<button type="button" class="header__btn btn-border">Де купити?</button>
+					<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+						<span></span>
+					</button>
+				</div>
+			</header>
+			<main class="page page--about-us">
+				<div class="breadcrumbs">
+					<div class="breadcrumbs__container">
+						<nav class="breadcrumbs__nav">
+							<a class="breadcrumbs__link breadcrumbs__link--main" href="#">CUPSOUL</a>
+							<span class="breadcrumbs__link breadcrumbs__link--last">Про компанію</span>
+						</nav>
+					</div>
+				</div>
+				<div class="page-top">
+					<div class="page-top__container">
+						<h1 class="section-title">Про компанію</h1>
+					</div>
+				</div>
+				<div class="section-banner">
+					<div class="section-banner__img">
+						<picture>
+							<source srcset="./assets/img/banner02-mob.jpg" media="(max-width: 574px)">
+							<img src="./assets/img/banner02.jpg" alt="hero">
+						</picture>
+					</div>
+					<div class="section-banner__container">
+						<div class="section-banner__content">
+							<h2 class="section-banner__title">Наша історія</h2>
+							<div class="section-banner__text">
+								<p>
+									Світ змінюється — разом із ним змінюються смаки, тренди, звички. Ми більше не п’ємо чай просто
+						заради теплого
+						напою.Тепер він — це емоція, стиль життя, момент, який хочеться прожити по-справжньому. І в колі
+						друзів, і в тиші
+						самоти, і в затишку родинної зустрічі.
+								</p>
+								<p>
+									CupSoul з’явився у 2023 році з ідеєю створити нову чайну культуру — сучасну, стильну, теплу.
+								</p>
+								<p>
+									Ми хотіли, щоб чай перестав бути лише звичкою й став частиною нової естетики задоволення:
+						емоційного, візуального,
+						людяного.
+								</p>
+							</div>
+							<a class="btn-more" href="#form-partner">
+								<span class="icon-arrow icon-arrow--lg"></span>
+								Стати
+					партнером
+							</a>
+						</div>
+					</div>
+				</div>
+				<section class="section utp">
+					<div class="utp__container">
+						<div class="section-top">
+							<h2 class="section-title">Як усе почалося?</h2>
+							<div class="section-text">
+								<p>
+									На початку 2024 року ми випустили першу партію продукції — унікальні бренди, що поєднали
+						автентичні традиції з сучасним
+						підходом. Ми прагнули створити не просто чай, а продукт, який:
+								</p>
+							</div>
+						</div>
+						<div class="utp__wrap">
+							<ul class="utp__list">
+								<li class="utp__item">
+									<h4 class="utp__title">Відображає індивідуальність</h4>
+									<div class="utp__text">
+										<p>кожен бренд має власний стиль і концепцію</p>
+									</div>
+								</li>
+								<li class="utp__item">
+									<h4 class="utp__title">Поєднує естетику та якість</h4>
+									<div class="utp__text">
+										<p>лише відібрані інгредієнти у преміальному пакуванні.</p>
+									</div>
+								</li>
+								<li class="utp__item">
+									<h4 class="utp__title">
+										Дарує
+										<br>
+										емоцію
+									</h4>
+									<div class="utp__text">
+										<p>від перших секунд знайомства до останнього ковтка.</p>
+									</div>
+								</li>
+								<li class="utp__item">
+									<h4 class="utp__title">Створює атмосферу</h4>
+									<div class="utp__text">
+										<p>
+											для розмов із близькими, пауз серед буденності, моментів, які залишаються в памʼяті.
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="section strong-brand">
+					<div class="strong-brand__container">
+						<div class="strong-brand__logo">
+							<img src="./assets/img/text-logo-white.svg" alt="logo">
+						</div>
+						<h2 class="strong-brand__title">це два сильні
+				чайні бренди</h2>
+						<ul class="strong-brand__list">
+							<li class="strong-brand__item item-strong-brand">
+								<div class="item-strong-brand__img">
+									<img src="./assets/img/graff-text.svg" alt="graff text logo">
+								</div>
+								<div class="item-strong-brand__text">
+									<p>
+										Чай із характером, який поєднує яскравий смак, стильний дизайн і новий підхід до культури
+							чаювання.
+									</p>
+								</div>
+							</li>
+							<li class="strong-brand__item item-strong-brand">
+								<div class="item-strong-brand__img">
+									<img src="./assets/img/ritz-text.png" alt="ritz text logo">
+								</div>
+								<div class="item-strong-brand__text">
+									<p>Елегантна класика для тих, хто цінує вишуканість, якість і традицію.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="section about-cup">
+					<div class="about-cup__container">
+						<h2 class="about-cup__title">
+							Місія
+							<img src="./assets/img/text-logo.svg" alt="cup soul logo">
+						</h2>
+						<blockquote class="about-cup__blockquote">
+							<span class="about-cup__line --icon-quote"></span>
+							<div class="about-cup__text">
+								<p>
+									CupSoul — це компанія, яка поєднує автентичність, стиль та інновації, щоб кожен наш продукт
+						дарував задоволення, емоцію
+						та незабутній досвід. Наша місія – створювати високоякісний продукт, аби кожен міг насолодитись
+						ним під свій смак і свій
+						стиль.
+								</p>
+							</div>
+							<span class="about-cup__line --icon-quote"></span>
+						</blockquote>
+					</div>
+				</section>
+				<section class="section about-cup">
+					<div class="about-cup__container">
+						<h2 class="section-title">Наші цінності</h2>
+						<div class="about-cup__wrap">
+							<div class="about-cup__list">
+								<div class="about-cup__item item-about-cup">
+									<h3 class="item-about-cup__title">Якість без компромісів</h3>
+									<div class="item-about-cup__text">
+										<p>
+											Ми працюємо лише з відібраною сировиною з найкращих світових плантацій. Усі процеси
+								відповідають міжнародним стандартам
+								безпечності — HACCP та ISO 22000. надалі не забути додати FSSC 22000
+										</p>
+									</div>
+								</div>
+								<div class="about-cup__item item-about-cup">
+									<h3 class="item-about-cup__title">Сучасний підхід</h3>
+									<div class="item-about-cup__text">
+										<p>
+											Ми переосмислюємо традиційні продукти, створюючи стильні, сміливі й трендові бренди.
+										</p>
+									</div>
+								</div>
+								<div class="about-cup__item item-about-cup">
+									<h3 class="item-about-cup__title">Естетика в кожній деталі</h3>
+									<div class="item-about-cup__text">
+										<p>
+											Усе — від аромату до упаковки — створено, щоб дарувати емоцію ще до першого ковтка. Ми
+								віримо: краса важлива не менше за
+								смак.
+										</p>
+									</div>
+								</div>
+								<div class="about-cup__item item-about-cup">
+									<h3 class="item-about-cup__title">Амбітність і розвиток</h3>
+									<div class="item-about-cup__text">
+										<p>
+											Ми не боїмося експериментів. Постійно оновлюємо асортимент, розширюємо лінійки й шукаємо
+								нові можливості для зростання —
+								в Україні та за її межами.
+										</p>
+									</div>
+								</div>
+								<div class="about-cup__item item-about-cup">
+									<h3 class="item-about-cup__title">Довіра та відкритість</h3>
+									<div class="item-about-cup__text">
+										<p>
+											CupSoul — це про чесні відносини з партнерами, клієнтами та споживачами. Ми завжди
+								відкриті до діалогу та надаємо
+								прозору інформацію про наші продукти.
+										</p>
+									</div>
+								</div>
+								<div class="about-cup__item item-about-cup">
+									<h3 class="item-about-cup__title">Емоції та натхнення</h3>
+									<div class="item-about-cup__text">
+										<p>
+											Наші бренди — це не просто високоякісна смачна продукція. Це стиль, настрій, спосіб
+								зупинитись у потоці подій і відчути
+								момент.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section section-image">
+					<div class="section-image__container">
+						<div class="section-image__row">
+							<div class="section-image__col">
+								<div class="section-image__img">
+									<img src="./assets/img/block.jpg" alt="Image">
+								</div>
+							</div>
+							<div class="section-image__col">
+								<div class="section-image__content">
+									<h2 class="section-image__title">Виробництво та якість</h2>
+									<div class="section-image__text">
+										<p>
+											Ми віримо, що якісний чай починається з поваги — до інгредієнтів, процесу, людини. Саме
+								тому ми контролюємо весь шлях
+								продукту — від відбору сировини до останнього штриха паковання.
+										</p>
+										<p>
+											CupSoul має власне виробництво, обладнане за сучасними стандартами, що дозволяє гнучко
+								реагувати на потреби ринку та
+								створювати унікальні рецептури. Усе, що потрапляє в наші паковання, проходить ретельний
+								контроль якості на кожному
+								етапі.
+										</p>
+										<p>
+											Ми працюємо виключно з натуральною сировиною преміального рівня — ретельно відібраними
+								високоякісними чайними
+								листочками, шматочками фруктів, ягід, квітів та  трав. Жодного пилу чи компромісу: лише
+								те, що варте вашої чашки.
+										</p>
+										<p>
+											Наше виробництво сертифіковане відповідно до міжнародних вимог безпечності харчової
+								продукції:HACCP, ISO 22000 (FSSC
+								22000) — не просто формальність, а гарантія стабільної якості та відповідальності перед
+								кожним споживачем.
+										</p>
+										<p>
+											Ми пишаємось нашим виробництвом — це результат продуманого процесу, турботи та
+								професіоналізму. І саме ця турбота — про
+								якість, смак і вашу довіру — залишається незмінною у кожному продукті CupSoul.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section responsibility">
+					<div class="responsibility__container">
+						<div class="section-top">
+							<h2 class="section-title">Еко-відповідальність</h2>
+							<div class="section-text">
+								<p>
+									Для нас важливо не лише, що ми створюємо, а й як ми це робимо. CupSoul — за відповідальне
+						виробництво, яке поважає
+						природу, людей і майбутнє.
+						Ми поступово впроваджуємо екологічні рішення на всіх етапах.
+								</p>
+							</div>
+						</div>
+						<div class="responsibility__wrap">
+							<ul class="responsibility__list">
+								<li class="responsibility__item">
+									<h3 class="responsibility__title">Пакування</h3>
+									<div class="responsibility__text">
+										<p>
+											Ми обираємо матеріали, які можна переробити або повторно використати. — Упаковка несе не
+								лише функцію, а й
+								відповідальність — за ресурс.
+										</p>
+									</div>
+								</li>
+								<li class="responsibility__item">
+									<h3 class="responsibility__title">Енергоощадне виробництво</h3>
+									<div class="responsibility__text">
+										<p>
+											Ми оптимізуємо процеси, зменшуємо споживання енергії та мінімізуємо відходи. —
+								Зосереджуємось на розумному споживанні
+								ресурсів.
+										</p>
+									</div>
+								</li>
+								<li class="responsibility__item">
+									<h3 class="responsibility__title">Відповідальність перед людьми</h3>
+									<div class="responsibility__text">
+										<p>
+											Ми будуємо відкриту комунікацію з партнерами, споживачами та командою. — Дотримуємось
+								чесності, прозорості та сталого
+								підходу в бізнесі.
+								Ми щодня робимо вибір на користь більш усвідомленого майбутнього — в упаковці, у
+								рецептурі, у партнерстві.Це — наша
+								відповідальність. І наша позиція.
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="section awards">
+					<div class="awards__container">
+						<div class="awards__wrap">
+							<div class="awards__content">
+								<h2 class="awards__title section-title">Наші нагороди</h2>
+								<div class="awards__text">
+									<p>
+										CupSoul — молода, але вже визнана компанія у чайній індустрії України. Наша продукція
+							отримала найвищі нагороди на ключових галузевих конкурсах, що підтверджують якість,
+							інноваційність і сучасний підхід до виробництва.
+									</p>
+								</div>
+								<div class="awards__nav">
+									<button type="button" class="awards-button-prev swiper-button-prev"></button>
+									<button type="button" class="awards-button-next swiper-button-next"></button>
+								</div>
+							</div>
+							<div class="awards__inner">
+								<div data-fls-slider="" class="awards__slider swiper" js-awards-slider="">
+									<div class="awards__wrapper swiper-wrapper">
+										<div class="awards__slide swiper-slide">
+											<div class="awards__img">
+												<img src="./assets/img/medal.png" alt="medal">
+											</div>
+										</div>
+										<div class="awards__slide swiper-slide">
+											<div class="awards__img">
+												<img src="./assets/img/medal.png" alt="medal">
+											</div>
+										</div>
+										<div class="awards__slide swiper-slide">
+											<div class="awards__img">
+												<img src="./assets/img/medal.png" alt="medal">
+											</div>
+										</div>
+										<div class="awards__slide swiper-slide">
+											<div class="awards__img">
+												<img src="./assets/img/medal.png" alt="medal">
+											</div>
+										</div>
+										<div class="awards__slide swiper-slide">
+											<div class="awards__img">
+												<img src="./assets/img/medal.png" alt="medal">
+											</div>
+										</div>
+									</div>
+									<div class="swiper-scrollbar"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section brands">
+					<div class="brands__container">
+						<div class="section-top">
+							<h2 class="section-title">Партнери</h2>
+							<div class="section-text">
+								<p>
+									Сьогодні CupSoul співпрацює з провідними представниками ринку: ритейлерами, мережами HoReCa,
+						дистриб’юторами,
+						маркетплейсами
+								</p>
+							</div>
+						</div>
+						<ul class="brands__list">
+							<li class="brands__item">
+								<div class="brands__img">
+									<img src="./assets/img/brands/07.png" alt="brand">
+								</div>
+							</li>
+							<li class="brands__item">
+								<div class="brands__img">
+									<img src="./assets/img/brands/08.svg" alt="brand">
+								</div>
+							</li>
+							<li class="brands__item">
+								<div class="brands__img">
+									<img src="./assets/img/brands/09.svg" alt="brand">
+								</div>
+							</li>
+							<li class="brands__item">
+								<div class="brands__img">
+									<img src="./assets/img/brands/10.svg" alt="brand">
+								</div>
+							</li>
+							<li class="brands__item">
+								<div class="brands__img">
+									<img src="./assets/img/brands/11.png" alt="brand">
+								</div>
+							</li>
+							<li class="brands__item">
+								<div class="brands__img">
+									<img src="./assets/img/brands/12.png" alt="brand">
+								</div>
+							</li>
+							<li class="brands__item">
+								<div class="brands__img">
+									<img src="./assets/img/brands/13.png" alt="brand">
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="contact" id="form-partner">
+					<div class="contact__container">
+						<div class="contact__row">
+							<div class="contact__col">
+								<h2 class="contact__title">
+									Зв'яжіться з нами, щоб обговорити можливості співпраці та отримати
+						індивідуальні умови!
+								</h2>
+								<div class="contact__text">
+									<p>
+										Ми завжди відкриті до нових партнерств і з радістю обговоримо можливості співпраці.
+							Пропонуємо гнучкі умови та
+							індивідуальний підхід до кожного партнера. Зв’яжіться з нами, щоб дізнатися більше про наші
+							пропозиції та знайти
+							найкраще рішення для вашого бізнесу.
+									</p>
+								</div>
+								<div class="contact__group group-contact">
+									<div class="group-contact__item">
+										<div class="group-contact__icon icon-phone"></div>
+										<div class="group-contact__content">
+											<div class="group-contact__label">Телефон гарячої лінії:</div>
+											<div class="group-contact__text">
+												<a href="tel:0800301710">0800-301-710</a>
+											</div>
+										</div>
+									</div>
+									<div class="group-contact__item">
+										<div class="group-contact__icon icon-email"></div>
+										<div class="group-contact__content">
+											<div class="group-contact__label">E-mail</div>
+											<div class="group-contact__text">
+												<a href="mailto:cupsoul@biosphere-corp.com">cupsoul@biosphere-corp.com</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="contact__col">
+								<form class="form" action="#">
+									<h3 class="form__title">
+										Стати партнером
+										<img src="./assets/img/text-logo-white.svg" alt="logo vup soul">
+									</h3>
+									<div class="form__text">
+										Напишіть нам і ми проконсультуємо вас з будь-яких питань щодо продукції
+							CupSoul
+									</div>
+									<div class="form__row">
+										<div class="form-group">
+											<label for="name">Ім’я</label>
+											<input autocomplete="off" id="name" type="text" name="" data-error="Помилка" placeholder="Ваше ім’я" class="input" required>
+										</div>
+										<div class="form-group">
+											<label for="email">Email</label>
+											<input autocomplete="off" id="email" type="email" name="" data-error="Помилка" placeholder="mail@gmail.com" class="input" required>
+										</div>
+										<div class="form-group">
+											<label for="message">Запитання</label>
+											<textarea autocomplete="off" id="message" name="" placeholder="Напишіть будь ласка ваше запитання тут..." data-error="Помилка" class="input"></textarea>
+										</div>
+									</div>
+									<div class="form__bottom">
+										<button class="btn-white" type="submit">
+											Надіслати запитання
+											<span class="icon-arrow icon-arrow--cream"></span>
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__top">
+						<a href="/cupsoul" class="footer__logo">
+							<img src="./assets/img/logo-footer.svg" alt="logo">
+						</a>
+						<nav class="footer__menu">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="brands.html" class="footer__link">Бренди</a>
+								</li>
+								<li class="footer__item">
+									<a href="catalog.html" class="footer__link">Каталог</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Співпраця</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Про компанію</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Новини</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="footer__lang lang">
+							<button class="lang__btn lang__btn--icon-arrow-down" type="button">UA</button>
+							<nav class="lang__nav">
+								<a class="lang__link" href="#">EN</a>
+								<a class="lang__link" href="#">RU</a>
+							</nav>
+						</div>
+						<button type="button" class="footer__btn btn-border">Де купити?</button>
+					</div>
+					<div class="footer__info">TEA & FOOD</div>
+					<div class="footer__bottom">
+						<div class="footer__copyright">2025. © CapSoul. Копіювання матеріалів заборонено.</div>
+						<a class="footer__fenix" href="#">
+							Розробка сайту
+							<img src="./assets/img/fenix-logo.svg" alt="fenix-logo">
+						</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
